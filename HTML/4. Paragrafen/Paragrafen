@@ -1,0 +1,36 @@
+Paragrafen
+13.Onderzoek wat een paragraaf tag is en hoe hij gebruikt wordt.
+Geef hier een voorbeeld bij.
+    Een paragraaf tag "<p>" definieert een alineascheiding in gewone tekst.
+        Na deze tag, creëert de browser automatisch wat ruimte boven en onder de inhoud. Deze ruimte wordt toegepast door de ingebouwde style sheets van de browser.
+
+    Hij wordt gebruikt doormiddel van een stuk tekst in te schrijven en dit te koppelen met een header.
+
+14.Onderzoek en leg het verschil tussen het stoppen van alle tekst in één
+paragraaf tag, en het opsplitsen van de tekst in meerdere tags uit.
+
+    Als je alle teksten in een paragraaf stopt wordt het gelezen als een achtereenvolgende tekst. Ook al plaats je een "enter" tussen een zin en komt het in jouw html document onder elkaar,
+    zal dit op een website te zien zijn als 1 achtereenvolgende stuk tekst.
+
+    Als je een paragraaf wilt maken met witte ruimtes er tussen doe je het zo:
+
+    <h1>Waar komt het vandaan?</h1>
+    <p>In tegenstelling tot wat algemeen aangenomen wordt is Lorem Ipsum niet zomaar willekeurige tekst. het heeft zijn wortels in een stuk klassieke latijnse literatuur uit 45 v.Chr. en.</p>
+    <p>Het standaard stuk van Lorum Ipsum wat sinds de 16e eeuw wordt gebruikt is hieronder, voor wie er interesse in heeft, weergegeven. Secties 1.10.32 en 1.10.33 van "de Finibus Bonorum et. </p>
+
+    Door meerdere <p> wordt het stukje gezien met een witte regel tussen de paragrafen.
+
+    Je kan het ook zo doen:
+
+    <h1>Waar komt het vandaan?</h1>
+    <p>In tegenstelling tot wat algemeen aangenomen wordt is Lorem Ipsum niet zomaar willekeurige tekst. het heeft zijn wortels in een stuk klassieke latijnse literatuur uit 45 v.Chr. en. 
+    
+    <br> (het <br> staat voor een break in het stukje tekst. De zinnen komen onder elkaar zonder een witte stuk tussen de zinnen)
+    
+    Het standaard stuk van Lorum Ipsum wat sinds de 16e eeuw wordt gebruikt is hieronder, voor wie er interesse in heeft, weergegeven. Secties 1.10.32 en 1.10.33 van "de Finibus Bonorum et. 
+    </p>
+
+    Het opsplitsen van de tekst zorgt er voor dat het overzichtelijk is om te lezen.
+
+15.Reproduceer het volgende resultaat door gebruik te maken van text-headers
+en de paragraaf tags.  Zie paragrafen.html
