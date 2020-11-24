@@ -45,5 +45,9 @@ en voeg deze als voorbeeld toe op je website.
 
     Use an Image as a Link
     Om een ​​afbeelding als link te gebruiken, plaatst u de <img> -tag in de <a> -tag:
-    <img src="https://techgrounds.nl/">https://techgrounds.nl/wp-content/uploads/2020/10/cropped-TG_Logo.d5934b2d-1-300x53.png">
+    <img src="https://techgrounds.nl/wp-content/uploads/2020/10/cropped-TG_Logo.d5934b2d-1-300x53.png">
+
+        <p><button onclick="document.location='default.asp'">TechGrounds Acadamy</button></p>
+
+        <a href="mailto:someone@example.com">Send email</a>
 
