@@ -1,0 +1,49 @@
+Link tags
+In onze footer willen we graag linken naar de TechGrounds website. Onderzoek hoe
+een link tag werkt.
+17.Voeg een link tag toe en reproduceer het volgende resultaat in de footer. 
+
+Definitie en gebruik
+De tag <link> definieert de relatie tussen het huidige document en een externe bron.
+
+De <link> -tag wordt meestal gebruikt om te linken naar externe style sheets.
+
+Het <link> -element is een leeg element, het bevat alleen attributen.
+
+De HTML <a> -tag definieert een hyperlink. Het heeft de volgende syntaxis:
+<a href="url"> linktekst </a>
+
+    OPDRACHT
+    <p>De website is gebouwd via <a href="https://techgrounds.nl/"> TechGrounds Acadamy </a></p>
+
+Zodra een gebruiker op de link klikt wordt de pagina weergegeven in de huidige
+browser window. Door gebruik te maken van attributen kan de link geopend worden
+in bijvoorbeeld een nieuw tabblad. Voorbeelden van HTML attributen zijn
+bijvoorbeeld een image tag die een “alt” attribuut heeft.
+
+18. Onderzoek welke 4 attributen een link tag kan hebben, leg uit wat deze doen
+en voeg deze als voorbeeld toe op je website. 
+
+    The target Attribute
+    Standaard wordt de gekoppelde pagina weergegeven in het huidige browservenster. Om dit te wijzigen, moet u een ander doel voor de link specificeren.
+
+    The target Attribute geeft aan waar het gekoppelde document moet worden geopend.
+
+    The target Attribute kan een van de volgende waarden hebben:
+
+    _self - Standaard. Opent het document in hetzelfde venster / tabblad als waarop erop werd geklikt
+        <a href="https://techgrounds.nl/" target="_self">
+
+    _blank - Opent het document in een nieuw venster of tabblad
+        <a href="https://techgrounds.nl/" target="_blank">
+
+    _parent - Opent het document in het bovenliggende frame
+        <a href="https://techgrounds.nl/" target="_parent">
+
+    _top - Opent het document in de volledige body van het venster
+        <a href="https://techgrounds.nl/" target="_top">
+
+    Use an Image as a Link
+    Om een ​​afbeelding als link te gebruiken, plaatst u de <img> -tag in de <a> -tag:
+    <img src="https://techgrounds.nl/">https://techgrounds.nl/wp-content/uploads/2020/10/cropped-TG_Logo.d5934b2d-1-300x53.png">
+
