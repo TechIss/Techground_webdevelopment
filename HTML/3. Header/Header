@@ -1,0 +1,35 @@
+Het gebruik van headers is belangrijk voor zoekmachines en de gebruikers van je website.
+11. Onderzoek en leg uit waarom headers zowel belangrijk zijn voor zoekmachines als
+voor de gebruikers.
+    Gebruikers:
+        Gebruikers gebruiken header tags om onderwerpen van artikellen te verschillen. 
+            Zo kunnen ze zien op welke deel van een webpagina ze zijn, of wat ze "gaan" lezen belangrijk is voor hun onderzoek.
+    Zoekmachines:
+        Zoekmachines gebruiken headers om te bepalen waar de webpagina over gaat. 
+        Gebruik headers om aan te geven welke delen van de inhoud belangrijk zijn en hoe deze met elkaar zijn verbonden. 
+        De header is rijk aan informatie. Door header-tags te gebruiken, kan je tekst van betere kwaliteit maken die gemakkelijker te lezen is. 
+        Goede artikelen zijn beter voor lezers, en dus beter voor uw SEO.
+
+
+Voor het aanmaken van een text-header, in het Nederlands een subkop of kop, kan je gebruik
+maken van een Header tag. Je kunt verschillende grootte koppen creëren.
+
+
+12. Onderzoek hoe je een text-header aanmaakt en reproduceer het volgende resultaat:
+
+    Heading of <H> bestaat uit verschillende variaties. 
+    Er circuleren allerlei termen die zo goed als hetzelfde betekenen:
+
+        tussenkop: deze term komt uit de offline drukwereld;
+        koptekst: zo heet de tussenkop in de Nederlandse versie van WordPress;
+        heading: zo noemt de Engelstalige WordPress een tussenkop;
+        subkop of subheading: spreektaal;
+
+        heading tag: officiële naam voor het HTML-element dat een tussenkop definieert;
+        kop 1, kop 2, kop 3 t/m kop 6: informele benaming voor de heading tag;
+        h1, h2, h3 t/m h6: zo noem je de tags die je toevoegt aan de tussenkop in HTML;
+
+        [Uit het stukje: https://businessblogschool.nl/heading-tags-h1-h2-wordpress/]
+
+        Header elementen zijn:  H1, H2, H3, H4, H5 en H6 met H1 als hoogste (of meest belangrijke) niveau en de H6 als de laagste.
+

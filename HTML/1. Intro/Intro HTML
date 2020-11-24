@@ -1,0 +1,171 @@
+1. Wat is het verschil tussen het internet en het world wide web?
+Het internet:
+    Het internet is een digitale netwerk waarop computers aan worden gesloten, zodat ze met elkaar kunnen communiceren.
+        Je kan denken aan de kabels, de glasvezels, de netwerkapparatuur, de communicatiesatellieten. Via het internet
+        kunnen ze met elkaar in contact komen. Zodoende kan een gebruiker "bijna" over ter wereld communiceren met een andere computer om bijvoorbeeld
+        data/informatie te verkrijgen.
+
+WWWW:
+    World wide web of www is een applicatie die van het internet gebruik maakt. Het is slechts een manier om webpagina's aan elkaar te koppelen.
+
+
+2. Wat is het verschil tussen HTML, CSS en JavaScript?
+    HTML:
+    HyperText Markup Languag of HTML is een schrijftaal om webpagina's te beschrijven. Dit is in een vorm van een normale text.
+
+    H:  Hyper; 'is het tegenovergestelde van lineair. Ouderwetse computerprogramma's waren noodzakelijkerwijs lineair - 
+        dat wil zeggen, ze hadden een specifieke volgorde. Maar met een "hyper" -taal zoals HTML, kan de gebruiker altijd en overal op de webpagina terechtkomen.'
+    T:  TEKST: 'Engelse karakters die worden gebruikt om gewone woorden te vormen.'
+    M:  Markering: 'is wat er met de tekst wordt gedaan om het uiterlijk te veranderen.'
+    L:  Taal: 'is precies dat. HTML is de taal die computers lezen om webpagina's te begrijpen.'
+
+    Geen naam (2020, 24 november). Wat is het verschil tussen HTML en JavaScript?
+    [Huis/Vragen/Wat is het verschil tussen HTML en JavaScript?]. Geraadpleegd van https://svcministry.org/nl/dictionary/what-is-the-difference-between-html-and-javascript/
+
+    CSS:
+    CSS is een ontwerptaal voor een betere weergave van webpagina's. Het is geschreven in HTML. Het wordt gebruikt om ontwerp toe te voegen, zoals kleuren toevoegen, lettertypen en tekst wijzigen, enz. 
+    je kunt ook functies toevoegen, zoals verlopen, schaduwen, 2D, 3D-conversie, randen, enz. CSS kan worden ingesloten in HTML of toegevoegd als externe tags.
+    De CSS-verklaringen hebben twee secties met de naam eigenschap en waarde, die worden gescheiden door een dubbele punt en sluit met een punt/komma.
+
+    JavaScript:
+    Javascript is een dynamische programmeertaal. Het wordt meestal gebruikt als onderdeel van een webbrowser om gegevens en interactie met eindgebruikers te verwerken.
+    Het draait op de computer van de bezoeker en hoeft niet continu van "de makers" website te worden gedownload.
+
+3. Wat is een HTML tag en een HTML element? Hoe open je een HTML tag en hoe sluit
+je een HTML tag. Maak hiervoor voorbeelden en leg uit.\
+    Een 'TAG':
+    Een tag is om een element te openen en te sluiten.
+    Open:<element> 
+    Sluiting: </element>
+        Het enige verschil tussen de opening tag en een afsluitende tag is de slash "/".
+
+    Een HTML TAG:
+    Open je door: "<html>" 
+    En sluit je door: "</html>" 
+    In HTML hebben alle tags dezelfde indeling, ze beginnen met een kleiner-dan teken "<" en eindigen met een groter-dan teken ">"
+    
+
+
+4. HTML gebruikt basis tags om structuur op te bouwen. De <html>, <head> en <body>.
+Geef voor elke element aan waarvoor het dient.
+    <html>:
+    Dit is de hele webpagina. Wat in de webpagina hoort gaat in dit tag.
+
+    <head>:
+    Hier hoort de meta gegevens van je website. Hier kan men de title, character set, styles, scripts, and andere meta informatie toevoegen.
+
+    <body>:
+    De body element bevat alle inhoud van een HTML-document, zoals koppen, alinea's, afbeeldingen, hyperlinks, tabellen, lijsten, enz. Opmerking: er kan er maar één body aanwezig zijn.
+
+
+5. Op HTML elementen kun je attributen gebruiken. Wat zijn HTML attributen ? Geef
+minimaal 5 attributen en maak voorbeelden waar je de attributen in toepast.
+    ATTRIBUTEN:
+    In sommige elementen kan je meer informatie toevoegen. Deze aanvullende informatie wordt een attribuut genoemd. Attributen vormen steeds paren zoals name="waarde" of class="waarde".
+    Attributen worden altijd geschreven in de start-tag en worden gevolgd door een gelijk teken. Het attribuut gegevens komen tussen aanhalingstekens te staan. Zie het onderstaande voorbeeld.
+        Attributen vormen steeds paren zoals name="waarde" of class="waarde".
+
+    1. Het title attribuut specificeert extra informatie over een element. Deze extra informatie wordt meestal weergegeven als een tooltiptekst wanneer de muisaanwijzer over het element beweegt.
+        <p title="deze pagina bespreekt het title attibuut">beweeg hierover de muisaanwijzer</p>
+            <element title="tekst/beschrijving">.  .  .  .</element>
+    
+    2. Het style attribuut specificeert een inline stijl voor een element. Het style attribuut heeft voorrang boven alle andere, zoals deze bv. gespecificeert in de <style> tag of een externe style sheet.
+        <h2 style="background-color: #ff0000;">Mijn eerste HTML pagina.</h2>
+            <element style="definitie(s)">
+
+    3. Het id attribuut specificeert een uniek identificatiekenmerk voor een element. Het id moet uniek zijn in het HTML document (pagina). 
+    De id-waarde mag maar één keer in een document (pagina) gebruikt worden en niet tegelijkertijd in hetzelfde document voorkomen als waarde van het name attribuut van het <a> element. 
+    Een uitzondering op dit laatste geldt wanneer de attributen name en id gebruikt worden voor hetzelfde element: dan moet de waarde voor beide attributen hetzelfde zijn. 
+    Het id attribuut kan worden gebruikt bij een JavaScript (via de HTML DOM) om wijzigingen aan te brengen aan het HTML element met het uniek id. 
+    De id selector wordt gedefinieerd met een "#" (hekje)
+        <h1 class="tekst" id="nota">De id selector heeft voorrang op de class selector en de tekst is dus rood ipv blauw!</h1>
+            <element id="naam/waarde">.  .  .  .</element>
+
+    4. Het class attribuut specificeert de klassenaam van een element. 
+    Met het class attribuut wordt meestal een klasse in een stylesheet aangeduid. De class selector wordt gedefinieerd met een "." (punt)
+        <h1 class="kop">Koptekst in kleur #ff00ff.</h1>
+            <element class="klassena(a)m(en)">.  .  .  .</element>
+    
+    5. HTML links worden gedefinieerd met de <a> tag.
+        Het link adres wordt gespecificeerd in het href attribuut.
+            <a href="http://validator.w3.org/#validate_by_upload" >Dit is een link</a>
+
+
+
+
+
+6. Waarom is een goede HTML Structuur belangrijk? Is deze code een goede structuur?
+Leg uit.
+    HTML Structuur is belangrijk, zodat de bezoekers weten waar zij zijn, hoe zij naar een andere gewenste pagina kunnen gaan en zodat bezoekers alle nodige informatie snel kunnen vinden.
+
+    De code van de link is niet volledig, maar de structuur van de belangrijk elementen zoals: <html> <head <body> staat in de juiste volgorde & heeft zowel de opening en sluiting bracket.
+    De enige wat er mist is de structuur in de body. 
+    Mocht je de website bekijken is dit alleen maar tekst op dezelfde algemene style. Er is geen value aan de tekst gegeven.
+    
+    Je ziet ook geen paragrafen, omdat het niet in de document wordt gedefinieerd met de juiste elementen. Zoals: <p>, <br> etc.
+
+    MIJN VOORBEELD:
+
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <title>Quick hummus recipe</title>
+        </head>
+    
+    <body>
+
+    <h1>Quick hummus recipe</h1>
+
+        <h2>This recipe makes quick, tasty hummus, with no messing. It has been adapted from a number of different recipes that I have read over the years.</h2>
+
+        <h3>Hummus is a delicious thick paste used heavily in Greek and Middle Eastern dishes. It is very tasty with salad, grilled meats and pitta breads.</h3>
+
+            <h4>Ingredients</h4>
+
+            <p>1 can (400g) of chick peas (garbanzo beans)<br>
+            175g of tahini<br>
+            6 sundried tomatoes<br>
+            Half a red pepper<br>
+            A pinch of cayenne pepper<br>
+            1 clove of garlic<br>
+            A dash of olive oil 
+            </p>
+
+        <h4>Instructions</h4>
+
+    <p>Remove the skin from the garlic, and chop coarsely<br>
+    Remove all the seeds and stalk from the pepper, and chop coarsely<br>
+    Add all the ingredients into a food processor<br>
+    Process all the ingredients into a paste.<br>
+    If you want a coarse "chunky" hummus, process it for a short time<br>
+    If you want a smooth hummus, process it for a longer time<br>
+    <br>
+    For a different flavour, you could try blending in a small measure of lemon and coriander, chili pepper, lime and chipotle, harissa and mint, or spinach and feta cheese. Experiment and see what works for you.<br>
+
+    <h4>Storage</h4>
+
+    <p>Refrigerate the finished hummus in a sealed container. You should be able to use it for about a week after you've made it. If it starts to become fizzy, you should definitely discard it.<br>
+
+    Hummus is suitable for freezing; you should thaw it and use it within a couple of months.
+    </p>
+
+
+  </body>
+</html>
+
+
+
+7. Wat is het verschil tussen inline en block elementen?
+    Elementen op blokniveau beginnen altijd op een nieuwe regel en beslaan de volledige breedte van het browservenster. Het strekt zich maximaal naar links en rechts uit.
+    Inline-elementen beginnen niet op een nieuwe regel, maar overspannen alleen de breedte om hun inhoud weer te geven.
+
+
+
+8. Wat betekent nesting? Codeer een voorbeeld met nesting erin.
+    Nesting:
+    Is een tag in een tag coderen, waardoor je het eerste elementen van style veranderd (bijvoorbeeld)
+    <p> (1e tag) <em> (emphesize 2e tag) Tekst </em> (closing tag em) </p> (closing tag p)
+    
+    Voorbeeld:
+        <p> <em> Hoi deze tekst zal schuin worden afgebeeld </em? </p>

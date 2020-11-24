@@ -1,0 +1,41 @@
+9. Sinds de komst van HTML5 zijn er elementen die betekenissen hebben. Wat wordt er bedoeld met HTML semantics? Waarom is het gebruik van
+semantics belangrijk?
+Volgens Dictionary.com verwijst semantiek naar de juiste interpretatie van de betekenis van een woord of zin. oftewel, als we een woord niet juist gebruiken dan gebruiken wij het niet semantisch.
+
+    Vele html tags worden aageduid met een semantisch naam. De naam van het element geeft de nadruk op de overeenkomst tussen de naam en de inhoud van de element. 
+     Aan de inhoud van de elementen wordt een betekenisvolle naam gegeven.
+        Oftewel, in een opzicht ziet men dat de naam in de tag al duidelijk aangeeft wat de tag doet. 
+
+    De voordelen van semantische html:
+
+        snellere laadtijd: omdat de code eenvoudiger is doordat enkel html elementen worden gebruikt en dus minder attributen om de inhoud in te delen is er minder dataverkeer;
+        betere toegankelijkheid: screenreaders en andere alternatieve browsers kunnen beter overweg met semantisch opgemaakte html-documenten omdat ze de 'betekenis' van de inhoud uit de tags kunnen afleiden;
+        mobiel: responsive design is stukken gemakkelijker met semantische elementen;
+        betere ranking: spiders kunnen semantische webpagina's beter en nauwkeuriger indexeren. Een spider ziet namelijk geen opmaak en is dan ook niet in staat daaruit het belang van woorden, zinnen of teksten te halen;
+        de vormgeving in CSS is nauwkeuriger en flexibeler;
+        HTML-code is eenvoudiger en overzichtelijk
+
+    Om ten volle te profiteren van de mogelijkheden van semantische HTML moet je de juiste denk- en werkwijze ontwikkelen.    
+
+
+
+10.Wat voor content zou je in de volgende elementen gebruiken?
+Geef in je antwoord voor elk element een toelichting.
+● <header>
+    De header gebruikt met als bovenstegedeelte van een webpagina
+● <footer>
+    De footer is de onderste stuk van een webpagina.
+● <main>
+    De main is de body van een webpagina
+● <nav>
+    De menubalk van een webpagina
+● <section>
+    Is een sectie (bijvoorbeeld een stuk artikel dat bij elkaar hoort (een block))
+● <aside>
+    Is een deel van een content, het heeft een indirecte verband met de omringende content. Het wordt meestal naast een content geplaats.
+● <article> 
+    Een artikel is een stuk tekst. 
+    Mogelijke bronnen voor het <article> -element:
+        Forumpost
+        Blogpost
+        Nieuws verhaal
