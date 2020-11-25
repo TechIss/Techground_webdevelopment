@@ -1,0 +1,137 @@
+Opdrachten
+Image, audio & video
+Het plaatsen van foto's op een website is een belangrijke toevoeging voor velen. Zo
+bestaan de meeste websites uit een grote collectie van foto's. Vaak kun je logo's,
+teamfoto's of andere soorten afbeeldingen terugvinden op een website. Het stylen
+van de afbeeldingen komt later in het onderdeel CSS aanbod.
+
+1. Bij het inladen van een bestand is het noodzakelijk om de locatie van het
+bestand aan te geven. Dit kan op 2 manieren:
+● Absolute path
+● Relative path
+
+Wat houden deze 2 paths in?
+Een image element is voor het inladen van een afbeelding. Afbeeldingen kunnen van
+verschillende formaat zijn. Bijvoorbeeld, een afbeelding kan een JPG formaat zijn.
+
+Absolute path:
+    een volledig webadres
+
+Relative Path:
+    Een lokale link (een link naar een pagina binnen dezelfde website) wordt gespecificeerd met een relatieve URL (zonder het "https: // www" -gedeelte):
+
+Examples found at: W3schools
+<h2>Absolute URLs</h2>
+<p><a href="https://www.w3.org/">W3C</a></p>
+<p><a href="https://www.google.com/">Google</a></p>
+
+<h2>Relative URLs</h2>
+<p><a href="html_images.asp">HTML Images</a></p>
+<p><a href="/css/default.asp">CSS Tutorial</a></p>
+
+
+2. Zoek uit welke formaat afbeeldingen er nog meer kan zijn.
+Een afbeelding tonen is afhankelijk van of de browser het ondersteunt.
+    De formaat van een foto kan bepaald worden door de pixels/afmeting en bestandgrootte de kb/gewicht.
+        Standaard formaten voor een afbeelding:
+            https://tweakers.net/nieuws/81280/gebruikers-met-720p-monitor-verslaan-1024x768-pixelbezitters.html
+                 Hier is te zien wat de meest dominante beeldresolutie is bij gebruikers.
+                  1.  1366 x 768 pixels
+                  2.  1024 x 768 pixels
+                  3.  1024 x 800 pixels 
+        beeldresolutie: is de afmeting van de beeldscherm die gebruikers zien. Met deze info kan met het beste spelen voor formaten van foto's.
+    
+    Ik heb ook gelezen dat je het beste niet meer dan 1000 pixels moet gebruiken voor een foto. De meer pixels het bevat, de langer het moet laden.
+
+    De resolutie van een foto kan het beste tussen: 72dpi en 96 dpi liggen.
+
+
+Je hebt ook verschillende bestand 'naam' formaten.
+
+    GIF
+    Dit formaat gebruikt men voornamelijk voor eenvoudige online afbeeldingen zoals logo’s in één of twee kleuren, 
+    animaties en plaatjes zonder kleurverloop of gewoon een simpele tekening. Bovendien kun je ervoor kiezen om een deel van de afbeelding transparant te maken.
+
+    PNG
+    Deze afbeeldingen hebben een betere kwaliteit dan GIF. Je kunt dit formaat gebruiken voor simpele foto’s 
+    of plaatjes met kleurverloop. Ook hier is de mogelijkheid tot transparantie.
+
+    JPG
+    Voor wat ingewikkeldere afbeeldingen en foto’s met veel diepte, schaduwen, 
+    kleuren en overloopjes kun je het beste JPG gebruiken. Het geeft de mooiste kwaliteit, maar er is geen transparantie mogelijk.
+
+
+3. Zoek uit welke browsers er zijn en maak een lijst van je antwoord.
+        Browsers:
+        Wat zijn browser?
+        Browsers is de toegangspoort tot het internet.
+
+        Lijst van browsers:
+        Firefox 
+        Chrome 
+        Edge
+        Safari
+        Opera
+        Brave
+        Internet Explorer 
+
+4. Onderzoek hoe het plaatsen van een foto gedaan wordt en plaats deze boven
+en onderaan je website door zowel gebruik te maken van de absolute path en
+relative path.
+Aan de img element kan je ook de alt attribute gebruiken.
+    Absolute path:
+    <img src="data:image/jpeg;base64,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" alt="absolute_path">
+        
+    Relative path:
+    <img src="./img/Relative_path.jpg" alt="Relative path" height="183px">
+
+5. Wat houdt de alt attribute in? En waarom is het handig om de alt attribuut te
+gebruiken?
+    (alt="_")
+    Hier typ je de omschrijving in van je afbeelding/foto. Deze is niet zichtbaar voor bezoekers en heel handig voor mensen die een aangepaste webbrowser gebruiken,
+    omdat ze visueel gehandicapt zijn.
+    Ook zijn alt-attributen handig voor het bepalen van de inhoud van de afbeeling, dit wordt vaak gebruikt door zoekmachines.
+
+
+In de sound folder staat een explosion.mp3 bestand.
+
+
+6. Laadt dit bestand in als een audio op het scherm.
+Extra: Maak het leuker door de audio op repeat te zetten.
+Tip: gebruik controls attribute om audio af te spelen.
+Een audio bestand heeft verschillende formaten. Niet alle formaten worden
+ondersteund door de browser. Hiervoor is een oplossing voor.
+<audio>
+Er zijn drie ondersteunde audioformaten in HTML: MP3, WAV en OGG.
+<audio controls>
+  <source src="./Sound/Copy of explosie.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio>
+
+HTML <audio> loop Attribute
+Een nummer dat opnieuw begint, elke keer dat het klaar is:
+    <audio controls loop>
+        <source src="./Sound/Copy of explosie.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+
+7. Speel een audio bestand af met <source> tag. Leg uit wat hier het voordeel
+van is.
+Source tags defineert welke videobestand je wilt gebruiken. Voordeel van een source tag is dat de audio afgespeeld wordt vanuit een source,
+waardoor het toegankelijk/afspeelbaar is op elke browser.
+
+Elk source-tag kan linken naar een verschillende audioformaten, de browser maakt gebruik van de formaat waarbij hij bekend mee is.
+
+
+8. Zoek een willekeurig video en sla dit op in je computer. Laadt dit bestand in
+als een video op het scherm.
+Tip: De video is veel groter dan het scherm. Zoek uit welke attribuut je voor de
+video element kan gebruiken om de grootte van de video aan te passen.
+Een video bestand heeft verschillende formaten. Niet alle formaten worden
+ondersteund door de browser. Hiervoor is een oplossing voor.
+Speel een video bestand af met <source> tag. Leg uit wat hier het voordeel van is. 
+
+De tag <video> wordt gebruikt om video-inhoud in een document in te sluiten, zoals een filmclip of andere videostreams.
+De voordeel van een source-tag: <video> -tag bevat een of meer <source> -tags met verschillende videobronnen. De browser kiest de eerste bron die het ondersteunt.
+De tekst tussen de tags <video> en </video> wordt alleen weergegeven in browsers die het <video> -element niet ondersteunen.
+Er zijn drie ondersteunde videoformaten in HTML: MP4, WebM en OGG.
