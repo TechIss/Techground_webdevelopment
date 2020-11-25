@@ -1,0 +1,22 @@
+HTML tables
+10. Om een tabel te maken heb je volgende elementen nodig:
+● <table>
+● <thead>
+● <tbody>
+● <tfoot>
+● <th>
+● <tr>
+● <td>
+Geef voor elke element een definitie.
+
+11. Maak een tabel met <table> element. Zie hieronder:
+
+12. Maak een agenda tabel met <table> element. Zie hieronder:
+
+
+13. Voor het maken van een tabel kan je ook gebruik maken van colspan en
+rowspan attributen. Zoek uit wat colspan en rowspan attribuut doet en meet
+het volgende:
+
+14. Maak nu zelf een tabel met de elementen die je hiervoor hebt geleerd.
+Maak geen gebruik van css.
