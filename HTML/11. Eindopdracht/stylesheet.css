@@ -1,0 +1,50 @@
+.socialmedia {
+    position: absolute;
+    align-content: center;
+    margin: 2%;
+    border: 5%;
+    border-radius: 10px;
+    width: 500px;
+    height: 800px;
+    position: absolute;
+}
+
+#container {
+    position:relative;
+    justify-content: center;
+    align-content: center;
+}
+
+#img1{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: solid blue;
+}
+
+#img2 {
+    position: absolute;
+    border-radius: 100px;
+    width: 30%;
+    border-bottom: solid 5px blue ;
+    border-left: solid 2px blue;
+    border-right: solid 2px blue;
+    left: 35%;
+    top: 50%;
+}
+
+.tekst {
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.likes {
+    padding: 2%;
+    align-content: space-between;
+    justify-items: center;
+    padding-left: 50px;
+}
+
+.Tabel_info {
+    justify-content: right;
+}
