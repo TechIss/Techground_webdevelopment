@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        table, th, td {
+          border: 1px solid black;
+        }
+        </style>
 </head>
 <body>
     <H1>Opdracht 10</H1>
@@ -18,14 +23,208 @@
             <li> tbody </li>
             Wordt gebruikt om de body-inhoud in een HTML-tabel te groeperen.
             <li> tfoot </li>
-
+            wordt gebruikt om voettekstinhoud in een HTML-tabel te groeperen.
             <li> th    </li>
-
+            defines a header cell in an HTML table.
             <li> tr    </li>
-            
+            tag definieert een rij in een HTML-tabel.
             <li> td    </li>
+            tag defines a standard data cell in an HTML table.
+
+            An HTML table has two kinds of cells:
+
+            Header cells - contains header information (created with the th - element)
+            Data cells - contains data (created with the td-tag element)
+            The text in td-tag elements are regular and left-aligned by default.
+            The text in th-tag elements are bold and centered by default. 
         </ol>
     </p>
+    <br>
+    <hr>
+    <br>
+    <h2>Opdracht 11</h2>
+<Div>
+    <table>
+        <tr>
+          <th>Heading 1/Column 1</th>
+          <th>Heading 2/Column 2</th>
+        </tr>
+        <tr>
+          <td>Row 1 Data Column 1</td>
+          <td>Row 1 Data Column 2</td>
+        </tr>
+        <tr>
+          <td>Row 2 Data Column 1</td>
+          <td>Row 2 Data Column 2</td>
+        </tr>
+      </table>
+</Div>
+<br>
 
+<Div>
+      <table>
+        <tr>
+          <th>Voornaam</th>
+          <th>Achternaam</th>
+          <th>Leeftijd</th>
+          <th>Telefoonr</th>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>41</td>
+          <td>+31 12345678</td>
+        </tr>
+        <tr>
+          <td>Steven</td>
+          <td>Smith</td>
+          <td>32</td>
+          <td>+31 12345678</td>
+        </tr>
+        <tr>
+            <td>Alexander</td>
+            <td>Beave</td>
+            <td>16</td>
+            <td>+31 12345678</td>
+        </tr>
+      </table>
+</Div>
+<br>
+<hr>
+<br>
+<h2>Opdracht 12</h2>
+<Div>
+    <table>
+      <tr align="centre">
+        <th>MA</th>
+        <th>DI</th>
+        <th>WO</th>
+        <th>DO</th>
+        <td>VR</td>
+      </tr>
+      <tr>
+        <td>Afspraak met tandarts</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Sporten</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>Huiswerk maken</td>
+        <td>Werken</td>
+        <td>Werken</td>
+        <td></td>
+      </tr>
+      <tr>
+          <td>Afspraak met tandarts</td>
+          <td></td>
+          <td></td>
+          <td>Werken</td>
+          <td>Bij vrienden</td>
+      </tr>
+    </table>
+</Div>
+
+<div>
+    <H2>Opdracht 13</H2>
+    <p>Col span: meaning a span off X colums. <br>
+    Rowspan: meaning a span off X rows </p>
+</div>
+
+    <div>
+        <table>
+            <tr>
+                <th></th>
+                <th>Sport</th>
+                <th>Aantal Recreanten</th>
+                <th>Aantal competitie spelers</th>
+                <th>Total Deelnemers</th>
+            </tr>
+            <tr>
+                <td rowspan="4">Racket sport</td>
+                <td>Badminton</td>
+                <td>10</td>
+                <td>30</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <td>Tafeltennis</td>
+                <td>59</td>
+                <td>30</td>
+                <td>89</td>
+            </tr>
+            <tr>
+                <td>Tennis</td>
+                <td>159</td>
+                <td>130</td>
+                <td>189</td>
+            </tr>
+            <tr>
+                <td>Tennis</td>
+                <td>159</td>
+                <td>130</td>
+                <td>189</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Ball sport</td>
+                <td>Voetbal</td>
+                <td>88</td>
+                <td>40</td>
+                <td>128</td>
+            </tr>
+            <tr>
+                <td>Basketbal</td>
+                <td>60</td>
+                <td>40</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Vollyball</td>
+                <td>35</td>
+                <td>20</td>
+                <td>55</td>
+            </tr>
+        </table>
+    </div>
+
+    <h1>The td rowspan attribute</h1>
+        <p>https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_td_rowspan</p>
+            <table>
+            <tr>
+                <th>Month</th>
+                <th>Savings</th>
+                <th>Savings for holiday!</th>
+            </tr>
+            <tr>
+                <td>January</td>
+                <td>$100</td>
+                <td rowspan="2">$50</td>
+            </tr>
+            <tr>
+                <td>February</td>
+                <td>$80</td>
+            </tr>
+            </table>
+
+            <h1>The td colspan attribute </h1>
+            <p>https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_td_colspan</p>
+            <table>
+            <tr>
+                <th>Month</th>
+                <th>Savings</th>
+            </tr>
+            <tr>
+                <td>January</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>February</td>
+                <td>$80</td>
+            </tr>
+            <tr>
+                <td colspan="2">Sum: $180</td>
+            </tr>
+            </table>
 </body>
 </html>
