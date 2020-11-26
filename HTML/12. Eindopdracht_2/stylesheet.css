@@ -33,16 +33,14 @@
   
 
 .socialmedia {
-    position: absolute;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: relative;
     align-content: center;
-    margin: 2%;
-    border: 5%;
-    border-radius: 10px;
     width: 500px;
     height: 800px;
-    position: absolute;
-    padding-left: 10%;
     Border: 10px;
+    margin: 5%;
 }
 
 #container {
@@ -82,19 +80,30 @@
 }
 
 table{
-    margin-left: 20px;
-    padding-left: 60%;
     text-align: left;
 }
 
-.main{
-    
+.container {
+    background-color: rgb(65, 220, 225);
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    justify-content: center;
 }
 
-.main2{
-    padding-top: 10%;
+
+.container2 {
+    background-color: skyblue;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 5%;
+
 }
 
-.submain{
-    margin-right: 5%;
+body {
+    height: 100%;
+    width: 100%;
+    background-color: royalblue;
 }

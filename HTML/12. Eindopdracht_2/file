@@ -1,26 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./stylesheet.css">
-</head>
 
-    <body>
-
-
-
-        <div class="header">
-            <img src="./img/cropped-TG_Logo.d5934b2d-1-300x53.png" width="20%">
-            <div class="menu" style="display: inline;">
-                <a href="#socialmedia">home</a>
-                <a href="Member.html " target="_self">Members</a>
-            </div>
-        </div>
-
-    <Div class="container">
-
+            <Div class="container1">
                 <Div class="socialmedia">
                     <header>
                         <div id="container">
@@ -50,7 +29,7 @@
                     <img src="./img/Coronavirus_img.jpg" alt="Social media afbeelding LOL dit is een coronavirus image"
                         width="100%">
                 </Div>
-
+            </Div>
 
 
         <br>
@@ -142,10 +121,3 @@
                     </table>
                 </div>
             </Div>
-            
-       
-    </Div>
-
-    </body>
-
-</html>
