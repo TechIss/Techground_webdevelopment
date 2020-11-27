@@ -81,6 +81,8 @@
 table{
     text-align: left;
     font-size: 30px;
+    align-content: center;
+    width: 100%;
 }
 
 
