@@ -4,8 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./Opdracht6_child_selector.css">
 </head>
 <body>
-    
+        <h1>Child Selector</h1>
+        <br>
+        <h3>Wat is een child selector & hoe gebruikt men dat?</h3>
+        
+        <p>Een child selector: ">" staat tussen twee CSS Selectors. Voorbeerd: <br>
+            ul &gt; li { margin: 0 0 5px 0; }
+
+            Het zorg er voor dat de eerste lvl van de selector wordt geselecteerd en hiermee kan je in CSS de eerste lvl veranderen <strong> zonder de diepste lagen te veranderen. </strong> 
+        </p>
+
+        <ul>
+            <li>item 1 ik gebruik: ul > li { 
+            background-color: rgb(38, 206, 32);
+            }
+            </li>
+                    <ul>
+                        <li>Item A ik gebruik: ul > li { 
+                            background-color: rgb(38, 206, 32);
+                            }
+                        </li>
+                        <ol>
+                            <li>Item A ik gebruik ul li { background-color: aqua;
+                            }</li>
+                            <li>Item B ik gebruik ul li { background-color: aqua;
+                            }</li>
+                        </ol>
+                    </ul>
+                <li>Item 2 ik gebruik: ul > li { 
+                    background-color: rgb(38, 206, 32);
+                    }</li>
+                <li>Item 3 ik gebruik: ul > li { 
+                    background-color: rgb(38, 206, 32);
+                    }</li>
+                    <ul>
+                        <li>Item Aik gebruik: ul > li { 
+                            background-color: rgb(38, 206, 32);
+                            }</li>
+                            <ol>
+                                <li>Item A ik gebruik ul li { background-color: aqua;
+                                }</li>
+                                <li>Item B ik gebruik ul li { background-color: aqua;
+                                }</li>
+                            </ol>
+                        <li>Item B ik gebruik: ul > li { 
+                            background-color: rgb(38, 206, 32);
+                            }</li>
+                    </ul>
+            </ul>
+<br>
+            <figure>
+                <figcaption>CSS</figcaption>
+                <xmp>
+                ul li { background-color: aqua;}
+                
+                ul > li { background-color: rgb(38, 206, 32);}</xmp>
+            </figure>
+
+            <img src="/img/child-combinator-selector-example.png" alt="Chilc combinator">
 </body>
 </html>

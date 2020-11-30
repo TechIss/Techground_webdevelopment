@@ -1,0 +1,6 @@
+ul li { background-color: aqua;
+}
+
+ul > li { 
+    background-color: rgb(38, 206, 32);
+}

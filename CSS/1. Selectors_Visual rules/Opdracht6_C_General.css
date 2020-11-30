@@ -1,0 +1,7 @@
+p ~ p {
+    color: crimson;
+}
+
+br ~ p {
+    color: cyan;
+}

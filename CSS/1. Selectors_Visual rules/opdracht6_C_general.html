@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Opdracht6_C_General.css">
+</head>
+<body>
+    <h1>Wat is een General selector en hoe gebruikt met het?</h1>
+    <p>De General Selector lijkt een beetje op de Adjecent selector. <br>
+    Het enige verschil is dat het niet perse een andere selector moet navolgen. Het kan op elk plek verschijnen.</p>
+
+    <Figure>
+        <figcaption>De General selector wordt gecombineerd door middel van de tag "~"</figcaption>
+        <xmp>
+            P ~ P {  color: crimson;}
+            br ~ p { color: cyan; }
+        </xmp>
+    </Figure>
+
+    <p>Dit is een voorbeeld van de eerste p ~ p selector.</p>
+    <p>Samen met deze tekst.</p>
+
+    <br>
+
+    <p>Dit is een paragraph met een onderbreking voor en na de paragraph.</p>
+    <br>
+    <h1>dit is een andere manier om de p-element te onderbreken</h1>
+    <p>Deze paragraph is gekoppeld met de vorige paragraph. Door de code (br ~ p { color: cyan; }) in de CSS zal deze paragraaf ook geselecteerd worden.</p>
+
+    <img src="/img/general-sibling-example.png" alt="General selector">
+
+</body>
+</html>
