@@ -1,0 +1,67 @@
+.main{
+    display: flex;
+    margin: 10px;
+}
+
+.blok1 {
+    flex-wrap: wrap;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(204, 204, 204);
+    border: 5px solid black;;
+    padding: 5px 5px 5px 5px;
+    margin: 0 0 0 3px;
+}
+
+.blok2 {
+    flex-wrap: wrap;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(204, 204, 204);
+    border: 5px solid black;;
+    padding: 5px 5px 5px 5px;
+    margin: 1px 0 0 0;
+}
+
+.blok3 {
+    flex-wrap: wrap;
+    display: flex;
+    width: 300px;
+    background-color: rgb(204, 204, 204);
+    padding: 100%;
+
+}
+
+.blok4 {
+    flex-wrap: wrap;
+    display: flex;
+    width: 200px;
+    height: 100px;
+    background-color: rgb(204, 204, 204);
+    border: 5px solid black;;
+    padding: 100%;
+}
+
+.blok5 {
+    flex-wrap: wrap;
+    display: flex;
+    width: 50px;
+    height: 100px;
+    background-color: rgb(204, 204, 204);
+    border: 5px solid black;;
+    padding: 5px 5px 5px 5px;
+    margin: 1px 0 0 0;
+}
+
+div {
+    padding: 1px;
+    width: 125px;
+    height: 125px;
+    background-color: rgb(204, 204, 204);
+    text-align: center;
+    align-content: center;
+    margin-right: 10%;
+    display: flex;
+}
