@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./Opdracht8_stylesheet.css">
 </head>
+
 <body>
+    <Div>
     <h1>Opdracht 8</h1>
     <p>Styling die je toepast wordt toegepast in een bepaalde volgorde. Het kan voorkomen dat je styling toepast en vervolgens niet het gewenste resultaat ziet. Cascade en Inheritance zijn belangrijke concepten om te begrijpen hoe styling werkt. Lees hier in de officiële documentatie meer over cascade en inheritance.
         Zoek ook andere referenties om het concept te begrijpen.
@@ -13,6 +16,61 @@
         Leg in eigen woorden uit wat met cascade en inheritance wordt bedoeld. Maak voorbeelden om je antwoord uit te leggen.
         </p>
     
-        https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance
+        <h1>Cascading In CSS</H1>
+
+            <br>
+            
+            <p>Cascading in het Nederlands vertaald betekent trapgewijs. Als we deze betekenis aanhouden is de betekenis in HTML een volgorde aan regels dat CSS aanhoudt wanneer het <br>
+            een bepaalde formule aan moet houden. Het kan zou zijn dat de gecreerde formule niet naar verwachting voldoet. Het is een "must" om te weten hoe de mechanisme werkt.</P>
+            
+            <br>
+            
+            <h1>Inheritance</h1>
+            
+            <br>
+            
+            <p>Inheritance in het Nederlands vertaald betekend erfenis. Inheritance is het erfen van values in het element's parent element. Dit kan verzorgen dat de code niet werkt naar verwachting</p>
+            
+            <br>
+            
+            <h3>Voorbeeld 1: Stylesheet cascading</h3>
+            
+            <p>Bij het invullen van een code in CSS zijn er bepaalde regels waar men rekening moet houden</p>
+                <ol>
+                <li>Twee codes met dezelfde waarde </li>
+                <li>Een element selector selecteert specifiek alle selectors met dezelfde waarde</li>
+                <li>Een class selector (div clas="") selecteert een specifieke waarde</li>
+                </ol>
+            
+            <p>Twee codes met dezelfde waarde in css, zal niet allebei geselecteerd worden. De onderste formule wordt hierbij geselecteerd volgens de mechanisme <br>
+            Bij een element selector en een class selector zal de browser luisteren naar de specifieke selector, omdat deze wat krachtiger is volgens regels </p>
+    </div>    
+            <h3>Voorbeeld 2: Stylesheet Body selector</h3>
+            <p>Zoals uitgelegd is Inheritance het erfen van een value</p>
+            <figure>
+            <figcaption>Body selector in CSS</figcaption>
+            <xmp>
+            body{
+                font-family: Arial;
+                backgroud-color: black;
+                color: White;
+            }
+            
+            div{
+                font-family: Verdana;
+                backgroud-color: cyan;
+                color: black;
+            }
+            
+            </xmp>
+            </figure>
+            
+            <p>De formule zal de body in het HTML bestand veranderen in het geen wat in de formule staan. De body tekst zal een font hebben van Arial en in het wit, met een achtergrond kleur zwart. <br>
+            Terwijl de div elementen een font krijgt met Verdana in het zwart en een achtergrondkleur cyan.</p>
+            
+            <h3>Voorbeeld 3 child selector</h3>
+            <p>Een voorbeeld om te begrijpen wat de mechanisme is van CSS kan je ook kijken naar de verschillende Selectors. <br>
+            De child selector zal de eerste laag van de eerste laag selectors selecteren zonder de andere te beinvloeden Click <a href="./Opdracht7.html">here</a> to learn about Selectors.
+            </p>
 </body>
 </html>
