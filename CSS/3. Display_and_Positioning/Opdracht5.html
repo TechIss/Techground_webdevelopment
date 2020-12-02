@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            position: relative;
+        }
+
+        .tekst {
+            position: absolute;
+            top: 8px;
+            left: 16px;
+            font-size: 18px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Opdracht 5</h1>
+    <p>Positioneer het &lt;img&gt; element achter de tekst. Zie voorbeeld hierboven en gebruik onderstaande HTML code. Je mag zelf een eigen image gebruiken.</p>
+    <img src="./img/Opdracht5_img.png" alt="Opdracht 5 Voorbeeld">
+
+    <xmp>
+        <h1>Dit is een titel</h1>
+        <p>Dit is een paragraaf.</p>
+        <p>Dit is nog een paragraaf.</p>
+        <img src="./img/background-color.jpg"/>
+    </xmp>
+
+    <div class="container">
+        <img src="./img/background-color.jpg" alt="Background color" width="500px">
+        <div class="tekst">
+            <h1>Dit is een titel</h1>
+            <p>Dit is een paragraaf.</p>
+            <p>Dit is nog een paragraaf.</p>
+        </div>
+    </div>
+
+    <p> Antwoord in CSS
+        <xmp>
+            .container {
+                position: relative;
+            }
+    
+            .tekst {
+                position: absolute;
+                top: 8px;
+                left: 16px;
+                font-size: 18px;
+            }
+        </xmp>
+    </p>
+</body>
+</html>

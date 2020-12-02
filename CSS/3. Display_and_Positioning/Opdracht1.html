@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Div>
+        <h1>Opdracht 1</h1>
+        <p2>Welke position properties zijn er? Leg voor elke position property uit wat het doet. Geef ook aan welke default position waarde elementen hebben die je gebruikt in HTML.</p2>
+    </Div>
+    
+    <h3>Static</h3>
+    <p>Het element wordt gepositioneerd volgens de normale stroom van het document. De eigenschappen boven, rechts, onder, links en z-index hebben geen effect. Dit is de standaardwaarde.</p>
+    <br>
+    <h3>Relative</h3>
+    <p>Het element wordt gepositioneerd volgens de normale stroom van het document en vervolgens verschoven ten opzichte van zichzelf op basis van de waarden boven, rechts, onder en links. De offset heeft geen invloed op de positie van andere elementen; dus de ruimte die voor het element in de pagina-indeling wordt gegeven, is hetzelfde alsof de positie statisch zou zijn.
+       <br> Deze waarde creëert een nieuwe stapelcontext wanneer de waarde van z-index niet auto is. Het effect ervan op de elementen table - * - group, table-row, table-column, table-cell en table-caption is niet gedefinieerd.</p>
+    <br>
+    <h3>absolute</h3>
+    <p>Het element wordt verwijderd uit de normale documentstroom en er wordt geen ruimte gemaakt voor het element in de paginalay-out. Het is gepositioneerd ten opzichte van de dichtstbijzijnde gepositioneerde voorouder, indien aanwezig; anders wordt het relatief geplaatst ten opzichte van het aanvankelijke bevattende blok. De uiteindelijke positie wordt bepaald door de waarden boven, rechts, onder en links.
+     <br>   Deze waarde creëert een nieuwe stapelcontext wanneer de waarde van z-index niet automatisch is. De marges van absoluut gepositioneerde dozen vallen niet samen met andere marges.</p>
+    <br>
+    <h3>fixed</h3>
+    <p>Het element wordt verwijderd uit de normale documentstroom en er wordt geen ruimte gemaakt voor het element in de paginalay-out. Het wordt gepositioneerd ten opzichte van het initiële bevattende blok dat is vastgesteld door de viewport, behalve wanneer een van zijn voorouders een transformatie-, perspectief- of filtereigenschap heeft die is ingesteld op iets anders dan geen (zie de CSS Transforms Spec), in welk geval die voorouder zich gedraagt ​​als het bevattende blok. (Merk op dat er inconsistenties in de browser zijn met het perspectief en de filter die bijdragen aan het vormen van blokken.) De uiteindelijke positie wordt bepaald door de waarden boven, rechts, onder en links.
+      <br>  Deze waarde creëert altijd een nieuwe stapelcontext. In gedrukte documenten wordt het element op elke pagina op dezelfde positie geplaatst.</p>
+    <br>
+    <h3>sticky</h3>
+    <p>Het element wordt gepositioneerd volgens de normale stroom van het document en vervolgens verschoven ten opzichte van de dichtstbijzijnde scrollende voorouder en het bevat blok (dichtstbijzijnde voorouder op blokniveau), inclusief tabelgerelateerde elementen, gebaseerd op de waarden boven, rechts, onder, en links. De offset heeft geen invloed op de positie van andere elementen.
+     <br>   Deze waarde creëert altijd een nieuwe stapelcontext. Merk op dat een plakkerig element "blijft plakken" aan zijn dichtstbijzijnde voorouder dat een "scrollmechanisme" heeft (gemaakt wanneer de overloop verborgen is, scrollen, automatisch of overlay), zelfs als die voorouder niet de dichtstbijzijnde eigenlijk scrollende voorouder is. Dit remt effectief elk "plakkerig" gedrag (zie het GitHub-probleem op W3C CSSWG).</p>
+    <br>
+</body>
+</html>
