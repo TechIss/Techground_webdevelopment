@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .firstlayer {
+            background-color: rgb(18, 116, 123);
+            position: relative;
+            display: inline-block;
+            width: 90px;
+            height: 20px;
+            border-radius: 20px;
+            margin: 10%;
+            justify-content: center;
+        }
+
+        .secondlayer::after{
+            content: "1";
+            background-color: rgb(18, 116, 123);
+            display: inline-block;
+            position: absolute;
+            width: 50px;
+            height: 35px;
+            border-radius: 50%;
+            text-align: center;
+            margin-left: 23%;
+            margin-top: -35%;
+            padding-top: 15%;
+        }
+
+        .secondlayer1::after{
+            content: "2";
+            background-color: rgb(18, 116, 123);
+            display: inline-block;
+            position: absolute;
+            width: 50px;
+            height: 35px;
+            border-radius: 50%;
+            text-align: center;
+            margin-left: 23%;
+            margin-top: -35%;
+            padding-top: 15%;
+        }
+
+        .secondlayer2::after{
+            content: "3";
+            background-color: rgb(18, 116, 123);
+            display: inline-block;
+            position: absolute;
+            width: 50px;
+            height: 35px;
+            border-radius: 50%;
+            text-align: center;
+            margin-left: 23%;
+            margin-top: -35%;
+            padding-top: 15%;
+        }
+
+
+        .dot1::after {
+            content: "";
+            display: inline-block;
+            width: 3px;
+            height: 3px;
+            background-color: red;
+            border-radius: 50%;
+            margin-left: 52%;
+            margin-bottom: -2%;
+        }
+
+        .dot2::before {
+            content: "";
+            display: inline-block;
+            width: 3px;
+            height: 3px;
+            background-color: red;
+            border-radius: 50%;
+            margin-left: 19%;
+            margin-bottom: 6%;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="firstlayer secondlayer">
+        <div class="dot1 dot2">
+        </div>
+    </div>
+
+    <div class="firstlayer secondlayer1">
+        <div class="dot1 dot2">
+        </div>
+    </div>
+
+    <div class="firstlayer secondlayer2">
+        <div class="dot1 dot2">
+        </div>
+    </div>
+
+</body>
+</html>

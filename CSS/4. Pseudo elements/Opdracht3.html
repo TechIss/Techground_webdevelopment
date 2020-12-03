@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 3</title>
+
+    <style>
+        .block::after {
+            content: "Content";
+            display: block;
+            background-color: red;
+            width: 10px;
+        }
+
+        .block2::after {
+            content: "Content";
+            display: block;
+            background-color: red;
+            width: 10px;
+        }
+
+        .block3::before {
+            content: "Content";
+            display: block;
+            background-color: red;
+            width: 10px;
+        }
+
+        .block4::before {
+            content: "Content";
+            display: block;
+            background-color: red;
+            width: 10px;
+        }
+
+        .firstletter::first-letter {
+            font-size: 130%;
+            color: red;
+        }
+
+        .first-line::first-line {
+            color: red;
+        }
+
+        input[type=file]::file-selector-button {
+        border: 2px solid #6c5ce7;
+        padding: .2em .4em;
+        border-radius: .2em;
+        background-color: #a29bfe;
+        transition: 1s;
+        }
+
+        ::grammar-error  {
+        text-decoration: underline red;
+        color: red;
+        }
+        
+        ul li::marker {
+        color: red;
+        font-size: 1.5em;
+        }
+
+        ::placeholder {
+        color: blue;
+        font-size: 1.5em;
+        }
+
+        .selection::selection {
+            color: rgb(22, 34, 36);
+            background-color: rgb(141, 112, 197);
+        } 
+        
+        body::spelling-error  {
+        text-decoration: wavy red;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="#after">::After</a>
+    <a href="#before">::before</a>
+    <a href="#backdrop">::backdrop</a>
+    <a href="#cue">::cue</a>
+    <a href="#cue-region">::cue-region</a>
+    <a href="#first-letter">::first-letter</a>
+    <a href="#first-line">::first-line</a>
+    <a href="#file-selector-button">::file-selector-button</a>
+    <a href="#grammar-error">::grammar-error</a>
+    <a href="#marker">::marker</a>
+    <a href="#part()">::part()</a>
+    <a href="#placeholder">::placeholder</a>
+    <a href="#selection">::selection</a>
+    <a href="#slotted()">::slotted()</a>
+    <a href="#spelling-error">::spelling-error</a>
+
+    <div>
+        <h1>Opdracht 3</h1>
+
+        <p>Er zijn aldus 14 verschillende pseudo elementen. Je hebt ze in de voorgaande opdracht reeds opgezocht en uitgezocht wat ze doen. Kun je van al deze pseudo-elementen een voorbeeld maken?</p>
+    
+        <h2 id="after">::after</h2>
+        <p>In CSS maakt ::after een pseudom element aan het laatste child van het geselecteerd element</p>
+        /* CSS3 syntax */
+        ::after
+        <br>
+        /* CSS2 syntax */
+        :after  
+    </div>
+    
+
+    <br>
+
+        <div class="block">
+            <Div>eerste child</Div>
+            <div>tweede tweede</div>
+            <p>P element derde/laatste child</p>
+        </div>
+
+        <br>
+
+        <div class="block2">
+            <Div>eerste child</Div>
+
+        </div>
+            <p>P element laatste child</p>
+        <xmp>
+            .block::after {
+                content: "Content";
+                display: block;
+                background-color: red;
+                width: 10px;
+            }
+    
+            .block2::after {
+                content: "Content";
+                display: block;
+                background-color: red;
+                width: 10px;
+            }
+        </xmp>
+
+    <hr>
+
+    <h2 id="before">::before</h2>
+    <p>In CSS maakt ::after een pseudom element aan het eerste child van het geselecteerd element</p>
+    /* CSS3 syntax */
+    ::after
+    <br>
+    /* CSS2 syntax */
+    :after  
+    </div>
+
+    <br>
+    <br>
+
+    
+    <div class="block3">
+        <Div>eerste child</Div>
+        <div>tweede tweede</div>
+        <p>P element derde child</p>
+    </div>
+
+    <br>
+
+    <div class="block4">
+        <Div>eerste div</Div>
+
+    </div>
+        <p>P element</p>
+    <xmp>
+        .block::after {
+            content: "Content";
+            display: block;
+            background-color: red;
+            width: 10px;
+        }
+
+        .block2::after {
+            content: "Content";
+            display: block;
+            background-color: red;
+            width: 10px;
+        }
+    </xmp>
+
+<hr>
+
+    <br>
+
+    <h2 id="backdrop">::backdrop</h2>
+    <p>Het :: backdrop CSS pseudo-element is een box ter grootte van de viewport die direct wordt weergegeven onder elk element dat in volledig scherm wordt gepresenteerd. <br>
+        :: backdrop erft niet van en wordt niet geërfd door andere elementen. Er worden geen beperkingen gesteld aan welke eigenschappen van toepassing zijn op dit pseudo-element.
+    <br> DIT WERKT NIET!!!
+    </p>
+    
+   <hr>
+    
+    <h2 id="cue">::cue</h2>
+    <p>::cue wordt gebruikt in captions of andere cues te stylen in of over een media bestand samen met VTT Tracks (geen flauw idee wat het is). Dit psuedo element kan je dus niet in een HTML zetten.</p>
+    
+    <hr>
+    
+    <h2 id="cue-region">::Cue-region</h2>
+    <p>This is an experimental technology</p>
+    
+    <hr>
+    
+    <h2 id="first-letter">::first-letter (:first-letter)
+    </h2>
+    <p>Dit gebruik je wanneer je van een pagina de eerste letter van een zin wilt stylen</p>
+    
+    <div class="first-letter">
+        <p>Hello de eerste letter van deze zin is 30% groter en deze zin krijgt een rode eerste letter.</p>
+    </div>
+
+    <hr>
+
+    <h2 id="first-line">::first-line</h2>
+    <p class="first-line">Het :: first-line CSS pseudo-element past stijlen toe op de eerste regel van een block-level element. (br) <br>
+        Merk op dat de lengte van de eerste regel van veel factoren afhangt, waaronder de breedte van het element, de breedte van het document en de lettergrootte van de tekst.</p>
+    
+    <hr>
+    
+    <h2 id="file-selector-button">::file-selector-button</h2>
+    <p>Het :: file-selector-button CSS pseudo-element vertegenwoordigt de knop van een &lt;input&gt; van type = "file". Het zorgt ervoor dat de knop werkt.</p>
+    
+    <label for="fileUpload">Upload file</label>
+    <input type="file" id="fileUpload">
+    
+    <br>
+    <br>
+
+    <hr>
+    
+    <h2 id="grammar-error">::grammar-error</h2>
+    <p>This is an experimental technology! Dit zoekt naar grammatical errors en onderlijnt ze wannner het tegenkomt.</p>
+    
+    <br>
+    
+    <hr>
+
+    <h2 id="marker">::marker</h2>
+    <p> Selecteerd het markeringsvak van een lijstitem, wat een opsommingsteken of nummer bevat, zoals bij een li of summary element.
+        <ul>
+            <li>Peaches</li>
+            <li>Apples</li>
+            <li>Plums</li>
+          </ul>
+    </p>
+    
+    <br>
+    <hr>
+
+    <h2>::part()</h2>
+    <p class="part">
+        This is an experimental technology! Werkt helaas niet.
+    </p>
+    
+    <br>
+    <hr>
+
+    <h2 id="placeholder">::placeholder</h2>
+    <p>Doormiddel van ::placeholder kan men de placeholder text in een input-element targeten in css en veranderen.</p>
+    
+    <input type="text" placeholder="name">
+
+    <br>
+    <hr>
+
+    <h2 id="selection">::selection</h2>
+    <p class="selection"> Deze tekst heeft speciale stijlen wanneer je deze markeert.
+    </p>
+    
+    <br>
+    <hr>
+
+    <h2 id="slotted">::slotted()</h2>
+    <p>Moet gebruikt worden met JS</p>
+    <br>
+    <hr>
+
+    <h2 id="spelling-error">::spelling-error</h2>
+    <p>Is een experimental technology. Werkt helaas niet.</p>
+</body>
+</html>

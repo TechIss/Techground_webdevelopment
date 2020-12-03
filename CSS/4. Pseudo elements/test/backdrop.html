@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+    <script src="./Backdrop.js"></script>
+    <style>
+        //Example 1
+#element {
+    border-bottom: none;
+    background: none;
+    //Content in "normal" mode.
+    &:before {
+        content: 'Normal mode';
+    }
+    //Content in fullscreen mode
+     &:fullscreen:before {
+         content: 'Fullscreen mode';         
+    }    
+    &:fullscreen::backdrop {
+        background: $b;
+    }
+    //According to MDN we need to prefix, but it doesn't work in my tests.
+    &:fullscreen::-webkit-backdrop {
+        background: $b;
+    }
+}
+
+//Example 2
+dialog {
+    width: 350px;
+    padding: 40px;
+    border: 1px solid rgba(black,.3);
+    border-radius: 2px;
+    box-shadow: 0 5px 20px black;
+    top: 30%;
+}
+dialog::backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(darken($g,25),.8);
+}
+
+
+
+
+
+//Styling stuff not needed for demo
+body {
+    text-align: left;
+    line-height: 1.5;
+}
+h1 {
+    font-size: 22px;
+    text-transform: none;
+    border-bottom: #636363 1px dotted;
+    code {
+        display: inline-block;
+        margin-bottom: 10px;
+        color: $y;
+        background: none;
+        box-shadow: none;
+    }
+}
+h2 { font-size: 18px; }
+code { font-size: 1em; }
+.example-cntr {
+    max-width: 800px;
+    margin: 0 auto 50px;
+    padding: 30px;
+    box-shadow: 0 1px 2px rgba(black,.3);
+    background: rgba(black,.15);
+    & > code {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 22px;
+        color: $y;
+        background: none;
+        box-shadow: none;
+    }
+}
+.underline { text-decoration: underline; }
+
+//
+.hide { display: none; }
+#element {
+    border-bottom: #444 1px solid;
+    padding-bottom: 20px;
+    &:before { 
+        display: block;
+        padding: 5px 0;
+        background: $g;
+    }
+    &:fullscreen:before {
+        display: block;
+        padding: 5px 250px;
+        background: $r;
+    }    
+}
+button {
+    padding: 8px 15px;
+    cursor: pointer;
+    background: linear-gradient(white, #aaa);
+    border-radius: 2px;
+    &:hover { background: white; }
+    &:active { background: linear-gradient(#aaa, white 20%);}
+}
+.note {
+    color: desaturate($y,30);
+    font-size: 12px;
+    letter-spacing: .5px;
+}
+.notes {
+    margin-bottom: 20px;
+    padding: 20px 20px 0;
+    border: #444 1px solid;
+    border-radius: 3px;
+    h2 { margin: 0; }
+}
+.example {
+    margin: 0 20px;
+    padding: 20px;
+    background: rgba(black,.2);
+    margin-bottom: 20px;
+    &:last-child { margin-bottom: 0; }
+    h1 { border: none !important; margin-bottom: 0 !important; }
+    h2 { margin-top: 0; }
+}
+dialog {
+    text-align: center;
+    p { text-align: left; }
+}
+    </style>
+</head>
+<body>
+    <div class="example-cntr backdrop">
+        <h1>CSS <code>::backdrop</code> pseudo-element</h1>
+        <p>The <code>::backdrop</code> pseudo-element is a box that the full screen element has behind it, but at the same time it sits above all other content.</p>
+        <p>It can be used together with the <code>:fullscreen</code> pseudo-class or the <code>&lt;dialog></code> HTML5 element to change the background color of the maximized screen, just in case we don’t want to go with the default black.</p>
+        <div class="notes">
+            <h2>A few notes to consider:</h2>
+            <ol>
+                <li>It’s mandatory to use double colon with the <code>::backdrop</code> pseudo- element, it doesn’t work with single colon like with other pseudo-elements.</li>
+                <li>Edge is the only one that shows any styling of the <code>::backdrop</code> pseudo-element in this demo.</li>
+                <li>Firefox 47 (<a href="https://developer.mozilla.org/en-US/Firefox/Releases/47" target="_blank" title="Links opens in a new tab">release date June 29, 2016</a>) will start supporting the <code>::backdrop</code> pseudo-element.</li>
+                <li>Also, <a href="http://caniuse.com/#search=dialog" target="_blank"
+                        title="Links opens in a new tab">no current version of Firefox supports the <code>&lt;dialog></code></a> HTML5 element.</li>
+                <li>Chrome doesn’t style the <code>::backdrop</code> pseudo-element when used with the <code>:fullscreen</code> pseudo-class even though <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::backdrop#Browser_compatibility" target="_blank"
+                        title="Links opens in a new tab">MDN states that Chrome does support it </a>if prefixed with <code>-webkit-</code>. This is for Example 1.</li>
+                <li>Chrome properly styles the <code>::backdrop</code> pseudo-element when used with the <code>&lt;dialog></code> HTML5 element. This is for Example 2.</li>
+                <li><a href="http://caniuse.com/#search=dialog" target="_blank"
+                        title="Links opens in a new tab">Only Chrome supports the <code>&lt;dialog></code></a> HTML5 element at the moment.</li>            
+                <li>No mobile device supports the <code>::backdrop</code> pseudo-element.</li>
+            </ol>
+        </div>
+        <div class="example">
+            <h2>Example 1: Using <code>:fullscreen</code></h2>
+            <h1 id="element"><span class="hide">The text is injected via CSS</span></h1>
+            <button onclick="var el = document.getElementById('element'); el.webkitRequestFullscreen();">Trigger Full Screen!</button>
+        </div>
+        <div class="example">
+            <h2>Example 2: Using <code>&lt;dialog></code></h2>
+            <dialog>
+                <h1>This is a dialog. Good job! :]</h1>
+                <p>Press <code>ESC</code> or click on Close button.</p>
+                <hr>
+                <button id="close">Close</button>
+            </dialog>
+            <button id="show">Open Dialog!</button>
+        </div>
+    </div>
+</body>
+</html>

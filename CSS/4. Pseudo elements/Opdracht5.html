@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+/* 
+        .container {
+            display: block;
+            height: 200px;
+            width: 500px;
+        } */
+
+        .container::before  {
+            content: "Lorem ipsum dolor, sit amet consectetur adipisicing elit." 
+            "Architecto, doloribus ipsam corporis molestias consequuntur eveniet ad obcaecati! Expedita dolores accusantium placeat, suscipit"
+            "doloribus ipsam corporis molestias consequuntur eveniet ad obcaecati! Expedita dolores accusantium placeat, suscipi"
+            "doloribus ipsam corporis molestias consequuntur eveniet ad obcaecati! Expedita dolores accusantium placeat, suscipi"
+            "doloribus ipsam corporis molestias consequuntur eveniet ad obcaecati! Expedita dolores accusantium placeat, suscipi"
+            "doloribus ipsam corporis molestias consequuntur eveniet ad obcaecati! Expedita dolores accusantium placeat, suscipi";
+            display: block;
+            background: url(./img/hond-puppy-in-het-gras.jpg);
+            height: 200px;
+            width: 500px;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            color: white;
+            border: 2px solid black;
+            position: relative;
+            text-align: center;
+            margin: 50px;
+            padding-top: 20px;
+            padding-left: 5px;
+            /* padding: 50px: */
+            /* margin-top: 10%; */
+        }
+
+        /* p {
+            display: block;
+            position: absolute;
+            margin-bottom: 5%;
+            /* top: 100px;
+            margin: 10px;
+            color: white;
+            width: 400px; */ */
+        }
+        
+        /* .text {
+            margin-bottom: 5%;
+        } */
+        /* .container {
+            background-image: url(../img/space.jpg);
+            width: 200px;
+        } */
+
+        /* img::after {
+            content: "esse quam cum officia nemo temporibus! Quos, vel.";
+            color: white;
+            display: inline-flex;
+        } */
+
+    </style>
+
+</head>
+<body>
+
+    <div class="text">
+        <h1>Opdracht 5</h1>
+        <p>
+            Hieronder vind je nog eens een voorbeeld van het gebruik van een pseudo-element ::before. Kun jij dit namaken? Zoek een afbeelding op internet.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis amet ipsam dolorem. Placeat velit modi nisi obcaecati quae, itaque, dolores in corrupti ullam, eum reiciendis beatae quasi numquam! Sapiente, quaerat!
+        </p>
+    </div>
+
+
+    <div class="container">
+            <!-- <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto, doloribus ipsam corporis molestias consequuntur eveniet ad obcaecati! Expedita dolores accusantium placeat, suscipit 
+            </p> -->
+    </div>
+
+
+    <div class="text">
+        <h1>Opdracht 5</h1>
+        <p>
+            Hieronder vind je nog eens een voorbeeld van het gebruik van een pseudo-element ::before. Kun jij dit namaken? Zoek een afbeelding op internet.
+        </p>
+    </div>
+    
+</body>
+</html>

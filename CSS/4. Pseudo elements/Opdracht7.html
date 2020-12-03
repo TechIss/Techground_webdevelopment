@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .vierkant {
+            position: relative;
+            width: 80px;
+            height: 80px;
+            background-color: skyblue;
+            margin: 20%;
+        }
+
+        .vierkant::before {
+            content: "";
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            background-color: skyblue;
+            transform: rotate(60deg);
+            display: block;
+        }
+
+        .vierkant::after{
+            content: "";
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            background-color: skyblue;
+            transform: rotate(30deg);
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+        <div class="vierkant">
+
+        </div>
+</body>
+</html>
