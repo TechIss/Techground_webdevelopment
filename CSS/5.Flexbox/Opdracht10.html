@@ -4,9 +4,138 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+
+        #container {
+            display: flex;
+            flex-direction: row;
+            background-color: rgb(0, 0, 0);
+            margin: 0;
+            padding: 20px;
+            width: 100%;
+            justify-content: space-evenly;
+            text-align: center;
+        }
+        p {
+            font-size: 10px;
+            width: 250px;
+        }
+
+        h6,p {
+            color: azure;
+            font-size: 12px;
+        }
+
+        button { 
+            display: block;
+            height: 50px;
+            width: 250px;
+        }
+
+        .item1 {
+            margin-right: 20px;
+        }
+
+        .item2 {
+            margin-right: 20px;
+        }
+
+        .item3 {
+            margin-right: 20px;
+        }
+
+        .item4 {
+            margin-right: 20px;
+        }
+
+        .item5 {
+            margin-right: 20px;
+        }
+
+        .item6 {
+            /* margin-right: 20px; */
+        }
+
+        button {
+            background-color: rgb(24, 88, 87);
+            border: 0;
+        }
+        button:hover {
+            background-color: aqua;
+        }
+
+        img.src:hover {
+            background-color: grey;
+        }
+
+        .overlay {
+        height: 200px;
+        width: 250px;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #008CBA;
+        }
+
+        .item1:hover .overlay {
+        opacity: 2;
+        }
+
+        .item2:hover .overlay {
+        opacity: 2;
+        }
+
+        .item3:hover .overlay {
+        opacity: 2;
+        }
+
+        .item4:hover .overlay {
+        opacity: 2;
+        }
+
+
+        
+
+    </style>
 </head>
 <body>
-    <h1>Opdracht 1</h1>
-    <p>Verzin zelf een opdracht met flexbox. Irriteer je medecursist ermee door je medecursist te vragen om het na te maken.</p>
+    <h1>Opdracht 10</h1>
+    <h3>Verzin zelf een opdracht met flexbox. Irriteer je medecursist ermee door je medecursist te vragen om het na te maken.</h3>
+    <div id="container">
+
+        <Div class="item1">
+            <img src="https://issaphotographycom.files.wordpress.com/2020/01/20181104_illumination-tour_rotterdam_nld_issa-photographyip0345-2.jpg?w=1024" alt="" height="200px" width="250px">
+            <div class="overlay">
+                <h6>Issa Photography</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut perspiciatis, assumenda mollitia quod alias incidunt nobis officia repudiand temporibus, soluta dolor dignissimos similique.</p>
+            </div>
+            <div><a href="https://issaphotography.studio/"> <button>Issa Photography</button></a></div>
+        </Div>
+
+        <Div class="item2">
+            <div><img src="https://issaphotographycom.files.wordpress.com/2020/01/dsc_0186-1.jpg?w=1024" alt="" height="200px" width="250px"><</div>
+            <div class="overlay">
+                <h6>Night Photography</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quam repellat autem tempora. Sapiente, atque, nisi minus modi quaerat quibusdam aperiam illum har architecto?</p></div>
+            <div><a href="https://www.minecraft.net/en-us/article/around-block--jungle"> <button>DEEP DIVE</button></a></div>
+        </Div>
+
+        <Div class="item3">
+            <div><img src="https://issaphotographycom.files.wordpress.com/2020/01/dsc_0222-6.jpg?w=1024" alt="" height="200px" width="250px"></div>
+            <div class="overlay">
+                <h6>HIRE ME!</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quis quibusdam doloribus optio distinctio, nam neque quia vitae culpa, nisi aperiam, sit natus dolorem! Et nulla dolor fugit sit suscipit!</p></div>
+            <div><a href="https://www.minecraft.net/nl-nl/get-minecraft"> <button>DEEP DIVE</button> </a></div>
+        </Div>
+
+        <Div class="item4">
+            <div><img src="https://issaphotographycom.files.wordpress.com/2020/07/20200626_youthhood_issa-photograhy_0021.jpg?w=880" alt="" height="200px" width="250px"><</div>
+            <div class="overlay">
+                <h6>Artistic Photography</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi exercitationem voluptatibus recusandae quos similique quibusdam aliquid nemo quidem dicta molestiae, necessitatibus, ipsasi cumque.</p></div>
+            <div><a href="https://www.minecraft.net/nl-nl/about-dungeons"> <button>DEEP DIVE</button></a></div>
+        </Div>
+
+    </div>
+    
 </body>
 </html>
