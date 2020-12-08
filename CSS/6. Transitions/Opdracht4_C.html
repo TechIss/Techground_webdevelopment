@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 5%
+        }
+        section {
+            position: relative;
+            border: solid darkmagenta;
+            height: 500px;
+            width: 800px;
+            background-color: burlywood;
+        }
+
+        div:nth-child(1) {
+        transition: all 2s ease-in;
+        position: absolute;
+        display: block;
+        width: 100px;
+        height: 100px;
+        background-color: darkcyan;
+        border: 5px solid darkgoldenrod;
+        top: 200px;
+        left: 350px;
+      }
+
+      div:nth-child(2) {
+        transition: all 2s ease-in;
+
+        position: absolute;
+        display: block;
+        width: 100px;
+        height: 100px;
+        background-color: darkcyan;
+        border: 5px solid darkgoldenrod;
+        top: 200px;
+        left: 350px;
+      }
+
+      div:nth-child(3) {
+        transition: all 2s ease-in;
+        position: absolute;
+        display: block;
+        width: 100px;
+        height: 100px;
+        background-color: darkcyan;
+        border: 5px solid darkgoldenrod;
+        top: 200px;
+        left: 350px;
+      }
+      section:hover div:nth-child(1) {
+        animation-name: box;
+        animation-duration: 8s;
+        background-color: coral;
+      }
+
+      section:hover div:nth-child(2) {
+        animation-name: box1;
+        animation-duration: 8s;
+        background-color: coral;
+      }
+      section:hover div:nth-child(3) {
+        animation-name: box2;
+        animation-duration: 10s;
+        background-color: coral;
+        animation-delay: 3s;
+      }
+
+      @keyframes box {
+        0% {
+          top: 200px;
+        }
+
+        25% {
+            top: 100px;
+            margin-left: -100px;
+        }
+        50% {
+          top: 0%;  
+          margin-left: -350px;
+        }
+        75% {
+            top: 20%;  
+            margin-left: -350px;
+        }
+      }
+
+      @keyframes box1 {
+        0% {
+          top: 200px;
+        }
+
+        25% {
+            top: 100px;
+            margin-left: 100px;
+        }
+        50% {
+          top: 0%;  
+          margin-left: 340px;
+        }
+        75% {
+            top: 20%;  
+            margin-left: 340px;
+        }
+      }
+
+      @keyframes box2 {
+        0% {
+          top: 200px;
+        }
+
+        24% {
+            margin-top: 10px;
+        }
+
+        25% {
+            margin-left: -350px;
+            /* margin-top: 190px; */
+        }
+
+        
+        40% {
+            margin-left: -350px;
+            margin-top: 190px;
+        }
+
+        55% {
+            margin-left: 0;
+            margin-top: 190px;
+        }
+
+        56% {
+          top: 200px;
+        }
+      }
+
+        
+
+
+    </style>
+</head>
+<body>
+    <head>
+        <nav>
+            <a href="/index.html">Homepage</a>
+        </nav>
+    </head>
+    <h1>Opdracht 4</h1>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+
+</body>
+</html>

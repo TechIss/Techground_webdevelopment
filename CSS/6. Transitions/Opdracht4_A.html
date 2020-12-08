@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 5%;
+      }
+      section {
+        position: relative;
+        display: flex;
+        width: 900px;
+        height: 540px;
+        margin-top: 5%;
+        border: 1px solid black;
+        border-radius: 5px;
+        background-color: rgb(235, 171, 184);
+        justify-content: center;
+      }
+
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: darkcyan;
+      }
+
+      div::before {
+        content: "1";
+        display: inline-block;
+        top: 0;
+        left: 0;
+        width: 100px;
+        height: 100px;
+        background-color: darkcyan;
+      }
+
+      div::after {
+        top: 0;
+        margin-top: -100px;
+        display: inline-block;
+        content: "2";
+        width: 100px;
+        height: 100px;
+        background-color: darkcyan;
+      }
+
+      section:hover div::before {
+        animation-name: box;
+        animation-duration: 8s;
+      }
+
+      section:hover div::after {
+        animation-name: box2;
+        animation-duration: 8s;
+      }
+
+      @keyframes box {
+        0% {
+          top: 0;
+        }
+        50% {
+          margin-left: 400px;
+        }
+        100% {
+          margin-right: ;
+        }
+      }
+
+      @keyframes box2 {
+        0% {
+          top: 0;
+        }
+        50% {
+          margin-left: -400px;
+        }
+        100% {
+          margin-right: ;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <head>
+      <nav>
+        <a href="/index.html">Homepage</a>
+      </nav>
+    </head>
+
+    <h1>Opdracht 4</h1>
+    <section>
+      <div></div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #container {
+            width: 500px;
+            height: 500px;
+            margin: 20%;
+        }
+
+        .middel-circle {
+            width: 250px;
+            height: 250px;
+
+        }
+
+        .middel-circle::before {
+            content: "";
+            display: block;
+            width: 250px;
+            height: 250px;
+            background-color: burlywood;
+            border-radius: 100%;
+        }
+
+
+        .small1 {
+            width: 150px;
+            height: 150px;
+
+        }
+
+        .small1::before {
+            content: "";
+            background-color: burlywood;
+            border-radius: 100%;
+            display: block;
+            width: 150px;
+            height: 150px;
+            margin-top: -125%;
+            margin-left: 120%;
+        }
+
+        .small2 {
+            width: 150px;
+            height: 150px;
+        }
+
+        .small2::before{
+            content: "";
+            background-color: burlywood;
+            border-radius: 100%;
+            display: block;
+            width: 150px;
+            height: 150px;
+            margin-top: -100%;
+            margin-left: -50%;
+        }
+
+        .dot {
+            width: 5px;
+            height: 5px;
+        }
+        
+        .dot::before {
+            content: "";
+            width: 5px;
+            height: 5px;
+            display: block;
+            border-radius: 100%;
+            background-color: black;
+            margin-top: -55px;
+            margin-left: 245px;
+        }
+
+        .dot::after {
+            content: "";
+            width: 5px;
+            height: 5px;
+            display: block;
+            border-radius: 100%;
+            background-color: black;
+            margin-top: -50px;
+            margin-left: 20px;
+
+        }
+
+        p {
+            font-size: 80px;
+            margin-top: -35%;
+            margin-left: 22%;
+        }
+
+    </style>
+</head>
+<body>
+    <head>
+        <nav>
+            <a href="/index.html">Homepage</a>
+        </nav>
+    </head>
+    
+    <div id="container">
+
+        <div class="middel-circle"> <div class="small1"></div>
+        <div class="small2"></div>
+        <div class="dot"></div>
+    </div>
+        <p>1</p>
+<br>
+        <div class="middel-circle"> <div class="small1"></div>
+        <div class="small2"></div>
+        <div class="dot"></div>
+    </div>
+        <p>2</p>
+<br>
+        <div class="middel-circle"> <div class="small1"></div>
+        <div class="small2"></div>
+        <div class="dot"></div>
+    </div>
+        <p>3</p>
+
+        
+    </div>
+
+</body>
+</html>

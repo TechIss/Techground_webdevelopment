@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 5%
+        }
+        section {
+            position: relative;
+            border: solid darkmagenta;
+            height: 500px;
+            width: 800px;
+            background-color: burlywood;
+        }
+
+        div:nth-child(1) {
+        transition: all 2s ease-in;
+        position: absolute;
+        display: block;
+        width: 100px;
+        height: 100px;
+        background-color: darkcyan;
+        border: 5px solid darkgoldenrod;
+        top: 200px;
+        left: 350px;
+      }
+
+      div:nth-child(2) {
+        transition: all 2s ease-in;
+
+        position: absolute;
+        display: block;
+        width: 100px;
+        height: 100px;
+        background-color: darkcyan;
+        border: 5px solid darkgoldenrod;
+        top: 200px;
+        left: 350px;
+      }
+
+      div:nth-child(3) {
+        transition: all 2s ease-in;
+        position: absolute;
+        display: block;
+        width: 100px;
+        height: 100px;
+        background-color: darkcyan;
+        border: 5px solid darkgoldenrod;
+        top: 200px;
+        left: 350px;
+      }
+      section:hover div:nth-child(1) {
+        margin-top: -200px;
+        margin-left: 340px;
+        background-color: coral;
+      }
+
+      section:hover div:nth-child(2) {
+        margin-top: -200px;
+        margin-left: -350px;
+        background-color: coral;
+      }
+      section:hover div:nth-child(3) {
+        margin-top: 190px;
+        background-color: coral;
+      }
+
+
+
+    </style>
+</head>
+<body>
+    <head>
+        <nav>
+            <a href="/index.html">Homepage</a>
+        </nav>
+    </head>
+    <h1>Opdracht 4</h1>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+
+</body>
+</html>

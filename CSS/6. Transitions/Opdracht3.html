@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 5%;
+      }
+      section {
+        display: flex;
+        flex-direction: column;
+        width: 850px;
+        height: 540px;
+        margin-top: 5%;
+        /* padding-left: 100px; */
+        border: 1px solid black;
+        border-radius: 5px;
+        background-color: rgb(235, 171, 184);
+      }
+
+      section:hover :nth-child(1) {
+        margin-left: 87%;
+        border-radius: 50%;
+        background-color: coral;
+      }
+
+      section:hover :nth-child(2) {
+        background-color: coral;
+        margin-left: 87%;
+        border-radius: 10%;
+      }
+
+      section:hover :nth-child(3) {
+        background-color: coral;
+        margin-left: 87%;
+      }
+
+      section:hover :nth-child(4) {
+        background-color: coral;
+        margin-left: 87%;
+      }
+
+      section:hover :nth-child(5) {
+        background-color: coral;
+        margin-left: 87%;
+        /* animation-name: box5;
+            animation-duration: 5s; */
+      }
+
+      div:nth-child(1) {
+        transition: all 0.8s linear;
+        width: 100px;
+        height: 100px;
+        background-color: darkcyan;
+        margin: 5px;
+        border: 5px solid darkgoldenrod;
+      }
+
+      div:nth-child(2) {
+        transition: all 2s ease-in;
+        width: 100px;
+        height: 100px;
+        background-color: darkcyan;
+        margin: 5px;
+        border: 5px solid darkgoldenrod;
+      }
+
+      div:nth-child(3) {
+        transition: all 1s ease-in;
+        width: 100px;
+        height: 100px;
+        background-color: darkcyan;
+        margin: 5px;
+        border: 5px solid darkgoldenrod;
+      }
+
+      div:nth-child(4) {
+        transition: all 1.5s ease-in;
+        width: 100px;
+        height: 100px;
+        background-color: darkcyan;
+        margin: 5px;
+        border: 5px solid darkgoldenrod;
+      }
+
+      div:nth-child(5) {
+        transition: 1.5s cubic-bezier(0.25, 1.15, 0.51, -0.62);
+        width: 100px;
+        height: 100px;
+        background-color: darkcyan;
+        margin: 5px;
+        border: 5px solid darkgoldenrod;
+      }
+
+      /* @keyframes box5 {
+        0% {
+          margin-left: 0;
+        }
+        20% {
+          margin-left: 30%;
+        }
+        30% {
+          margin-left: 20%;
+        }
+        50% {
+          margin-left: 87%;
+        }
+        70% {
+          margin-left: 60%;
+        }
+        85% {
+          margin-left: 70%;
+        }
+        100% {
+          margin-left: 0;
+        } */
+      }
+    </style>
+  </head>
+  <body>
+    <head>
+      <nav>
+        <a href="/index.html">Homepage</a>
+      </nav>
+    </head>
+    <h1>Opdracht 3</h1>
+    <section>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="box5"></div>
+    </section>
+
+    <p>
+      Box 1 to 4 is with transition and box 5 is with a keyframe animation.
+      Quest is not so clear, cause transition and animation isn't the same.
+    </p>
+  </body>
+</html>

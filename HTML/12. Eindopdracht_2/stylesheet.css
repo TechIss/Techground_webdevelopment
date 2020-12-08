@@ -56,9 +56,9 @@
 
 #img2 {
     position: absolute;
-    border-radius: 100px;
+    border-radius: 100%;
     width: 30%;
-    border-bottom: solid 5px blue ;
+    border-bottom: solid 2px blue ;
     border-left: solid 2px blue;
     border-right: solid 2px blue;
     left: 35%;

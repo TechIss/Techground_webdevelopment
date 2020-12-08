@@ -11,42 +11,36 @@
             flex-direction: row;
             background-color: pink;
             padding: 100px;
-            align-items: flex-start;
+            width: 400px;
+            height: 500px;
+            /* align-items: flex-start; */
         }
 
         .item {
-            /* display: block; */
-            margin: 10px;
-            padding-top: 50px;
-            padding-left: 50px;
-            padding-bottom: 50px;
-            padding-right: 50px;
             background-color: aqua;
-            align-self: flex-end;
+            align-items: stretch;
+            width: 40px;
         }
 
         .item2 {
-            /* display: block; */
-            margin: 10px;
-            padding-top: 50px;
-            padding-left: 50px;
-            padding-bottom: 50px;
-            padding-right: 50px;
             background-color: rgb(29, 199, 199);
             align-self: center;
-
+            width: 40px;
+            height: 50px;
         }
 
         .item3 {
-            /* display: block; */
-            margin: 10px;
-            padding-top: 50px;
-            padding-left: 50px;
-            padding-bottom: 50px;
-            padding-right: 50px;
             background-color: rgb(29, 163, 163);
             align-self: flex-start;
+            width: 40px;
+            height: 50px;
+        }
 
+        .item4 {
+            background-color: rgb(29, 163, 163);
+            align-self: flex-end;
+            width: 40px;
+            height: 50px;
         }
 
 
@@ -55,16 +49,65 @@
 
 </head>
 <body>
-    <h1>Opdracht 2</h1>
-    <p>Zie het onderstaande voorbeeld, de items staan nu anders uitgelijnd. Maak het na met flex. Gebruik geen width, height of line-height.</p>
-    <img src="./img/Opdracht2_afbeelding.png" alt="Afbeelding 2">
+    <head>
+        <nav>
+            <a href="/index.html">Homepage</a>
+        </nav>
+    </head>
+    <h1>Opdracht 5</h1>
+    <p>De property ‘align-items’ is een property die door flex gebruikt wordt. Maak verschillende voorbeelden door gebruik te maken van de align-items property.</p>
+
     <div class="main">
         <div class="item">1</div>
         <div class="item2">2</div>
         <div class="item3">3</div>
+        <div class="item4">4</div>
     </div>
 
+    <br>
 
+    <p>
+        <xmp>
+            .item {
+                background-color: aqua;
+                align-items: stretch;
+                width: 40px;
+            }
+        </xmp>
+    </p>
+
+    <p>
+        <xmp>
+            .item2 {
+                background-color: rgb(29, 199, 199);
+                align-self: center;
+                width: 40px;
+                height: 50px;
+            }
+        </xmp>
+    </p>
+
+    <p>
+        <xmp>
+            .item3 {
+                background-color: rgb(29, 163, 163);
+                align-self: flex-start;
+                width: 40px;
+                height: 50px;
+            }
+        </xmp>
+    </p>
+
+    <p>
+        <xmp>
+                    .item4 {
+            background-color: rgb(29, 163, 163);
+            align-self: flex-end;
+            width: 40px;
+            height: 50px;
+        }
+        </xmp>
+    </p>
     
 
 </body>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 5%
+        }
+        section {
+            position: relative;
+            border: solid darkmagenta;
+            height: 500px;
+            width: 800px;
+            background-color: burlywood;
+        }
+
+        div:nth-child(1) {
+        position: absolute;
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        background: url(./img/istockphoto-936258078-612x612.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
+
+
+      div:nth-child(2) {
+        position: absolute;
+        display: inline-block;
+        width: 100px;
+        height: 95px;
+        transition: background-color 0.3s ease-in 0.5s;
+      }
+
+      div:nth-child(3) {
+        position: absolute;
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        background-color: darkcyan;
+        border: 5px solid darkgoldenrod;
+        transition: transform 0.3s ease-out;
+      }
+
+      section:hover div:nth-child(3){
+        transform: translate(100px, 50px) rotate(20deg)
+      }
+
+      section:hover div:nth-child(2){
+        background-color: rgba(255, 0, 0, 0.2);
+      }
+    </style>
+</head>
+<body>
+    
+    <head>
+        <nav>
+            <a href="/index.html">Homepage</a>
+        </nav>
+    </head>
+    <h1>Opdracht 5</h1>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+
+</body>
+</html>
