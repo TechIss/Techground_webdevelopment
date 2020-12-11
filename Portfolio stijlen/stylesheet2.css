@@ -17,12 +17,10 @@
   text-align: left;
   height: 100vh;
   grid-template-areas:
-  "menu Members"
+  "menu members"
   "menu  info"
   "menu  info"
 }
-
-
 
 #menuToggle
 {
@@ -42,7 +40,7 @@
   text-decoration: none;
   color: #232323;
   
-  transition: color 0.3s ease;
+  transition: color 0.1s ease;
 }
 
 #menuToggle a:hover
@@ -54,8 +52,8 @@
 #menuToggle input
 {
   display: block;
-  width: 40px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   position: absolute;
   top: -7px;
   left: -5px;
@@ -174,38 +172,382 @@
 }
 
 table {
-  width: 90%;
+  width: 100%;
 }
 
 #info{
   grid-area: info;
-  width: 817px;
 }
 
-
+form {
+  width: 100%;
+}
 input[type=text] {
   border: none;
   box-sizing: border-box;
   background: cadetblue;
-  display: inline-block;
-  border-radius: 10px;
+  border-radius: 0.5rem;
   width: 100%;
   padding: 12px 20px 10px 5px;
-  margin: 8px 0;
+  margin: 1fr 1fr;
 }
 
 label {
-  padding: 12px 12px 0px 0;
+  padding: 13px 12px 20px 10px;
   display: inline-block;
 }
 
-@media only screen and (max-width:550px){
+label[for=Adress]{
+  width: 92%;
+}
+
+label[for=Postcode]{
+  width: 33%;
+}
+
+@media only screen and (max-width:550px) and (orientation:portrait) {
   #container {
+    font-size: 80%;
     grid-template-columns: 0.5fr;
-    grid-template-rows: 0.2fr 0.3fr 0.3fr 0.4fr 0.4fr;
+    grid-template-rows: 1fr 0.3fr 0.3fr;
     grid-template-areas: 
     "menu"
     "Members"
     "info"
   }
+
+  input[type=text] {
+    border: none;
+    box-sizing: border-box;
+    background: cadetblue;
+    border-radius: 0.5rem;
+    width: 100%;
+    padding: 5px 10px 5px 2px;
+    margin: 0.2fr 0.1fr;
+  }
+  label {
+    padding: 5px 5px 5px 5px;
+  }
+  table {
+    width: 30%;
+  }
+
+  label[for=FirstName]{
+    width: 70%;
+  }
+
+  label[for=Surname]{
+    width: 70%;
+  }
+
+  label[for=Age]{
+    width: 70%;
+  }
+
+  label[for=Company]{
+    width: 70%;
+  }
+  
+  label[for=Username]{
+    width: 70%;
+  }
+  
+
+  label[for=Email]{
+    width: 70%;
+  }
+
+  label[for=Adress]{
+    width: 70%;
+  }
+  
+  label[for=City]{
+    width: 70%;
+  }
+  label[for=Country]{
+    width:70%;
+  }
+
+  label[for=Postcode]{
+    width: 70%;
+  }
+
+  Form {
+    width: 40%;
+  }
+  #menuToggle span {
+    width: 25px;
+    margin-bottom: 2px;
+  }
+
+  
+   #menuToggle {
+     display: block;
+     position: relative;
+     top: 5px;
+     left: 10px;
+   }
+}
+
+@media only screen and (max-height:500px) and (orientation:landscape) {
+  #container {
+    font-size: 10px;
+    grid-template-columns: 0.5fr;
+    grid-template-rows: 1fr 0.3fr 0.3fr;
+    grid-template-areas: 
+    "menu"
+    "Members"
+    "info"
+  }
+
+  input[type=text] {
+    border: none;
+    box-sizing: border-box;
+    background: cadetblue;
+    border-radius: 0.5rem;
+    width: 100%;
+    padding: 5px 10px 5px 2px;
+    margin: 0.2fr 0.1fr;
+  }
+  label[for=FirstName]{
+    width: 70%;
+  }
+
+  label[for=Surname]{
+    width: 70%;
+  }
+
+  label[for=Age]{
+    width: 70%;
+  }
+
+  label[for=Company]{
+    width: 70%;
+  }
+  
+  label[for=Username]{
+    width: 70%;
+  }
+  
+
+  label[for=Email]{
+    width: 70%;
+  }
+
+  label[for=Adress]{
+    width: 70%;
+  }
+  
+  label[for=City]{
+    width: 70%;
+  }
+  label[for=Country]{
+    width:70%;
+  }
+
+  label[for=Postcode]{
+    width: 70%;
+  }
+
+  label {
+    padding: 5px 5px 5px 5px;
+  }
+
+  Table {
+    width: 30%;
+  }
+
+  Form {
+    width: 30%;
+   }
+
+   #menuToggle span {
+     width: 25px;
+     margin-bottom: 2px;
+   }
+
+   
+    #menuToggle {
+      display: block;
+      position: relative;
+      top: 10px;
+      left: 5px;
+    }
+}
+
+@media only screen and (max-height:768px) and (orientation:landscape) {
+  #container {
+    font-size: 10px;
+    grid-template-columns: 0.1fr;
+    grid-template-rows: 0.2fr 0.1fr;
+    grid-template-areas: 
+    "menu"
+    "Members"
+    "info"
+  }
+
+  input[type=text] {
+    border: none;
+    box-sizing: border-box;
+    background: cadetblue;
+    border-radius: 0.5rem;
+    width: 100%;
+    padding: 5px 10px 5px 2px;
+    margin: 0.2fr 0.1fr;
+  }
+
+  label[for=FirstName]{
+    width: 40%;
+  }
+
+  label[for=Surname]{
+    width: 50%;
+  }
+
+  label[for=Age]{
+    width: 20%;
+  }
+
+  label[for=Company]{
+    width: 70%;
+  }
+  
+  label[for=Username]{
+    width: 40%;
+  }
+  
+  label[for=Email]{
+    width: 50%;
+  }
+
+  label[for=Adress]{
+    width: 50%;
+  }
+  
+  label[for=City]{
+    width: 40%;
+  }
+  label[for=Country]{
+    width:50%;
+  }
+
+  label[for=Postcode]{
+    width: 40%;
+  }
+
+  label {
+    padding: 5px 5px 5px 5px;
+  }
+
+  Table {
+    width: 30%;
+  }
+
+  Form {
+    width: 30%;
+   }
+
+   #menuToggle span {
+     width: 25px;
+     margin-bottom: 2px;
+   }
+
+   
+    #menuToggle {
+      display: block;
+      position: relative;
+      top: 10px;
+      left: 5px;
+    }
+}
+
+@media only screen and (max-width:1000px) and (orientation:portrait){
+  #container {
+    height: 100vh;
+    font-size: 10px;
+    grid-template-columns: 0.5fr;
+    grid-template-rows: 0.1fr 0.3fr 0.1fr;
+    grid-template-areas: 
+    "menu"
+    "Members"
+    "info"
+  }
+
+  input[type=text] {
+    border: none;
+    box-sizing: border-box;
+    background: cadetblue;
+    border-radius: 0.5rem;
+    width: 100%;
+    padding: 3px 2px 3px 2px;
+    margin: 0.1fr 0.1fr;
+  }
+  label[for=FirstName]{
+    width: 40%;
+  }
+
+  label[for=Surname]{
+    width: 50%;
+  }
+
+  label[for=Age]{
+    width: 20%;
+  }
+
+  label[for=Company]{
+    width: 70%;
+  }
+  
+  label[for=Username]{
+    width: 40%;
+  }
+  
+  label[for=Email]{
+    width: 50%;
+  }
+
+  label[for=Adress]{
+    width: 50%;
+  }
+  
+  label[for=City]{
+    width: 40%;
+  }
+  label[for=Country]{
+    width:50%;
+  }
+
+  label[for=Postcode]{
+    width: 40%;
+  }
+
+  label {
+    display: inline-block;
+    padding: 5px 5px 5px 5px;
+  }
+
+  Table {
+    width: 30%;
+  }
+
+  Form {
+    width: 30%;
+   }
+
+   #menuToggle span {
+     width: 25px;
+     margin-bottom: 2px;
+   }
+
+   
+    #menuToggle {
+      display: block;
+      position: relative;
+      top: 10px;
+      left: 5px;
+    }
+
+    #menu {
+      height: 700px;
+    }
 }
