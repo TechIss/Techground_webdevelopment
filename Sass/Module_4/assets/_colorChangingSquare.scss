@@ -1,0 +1,17 @@
+@import "./variables";
+
+@mixin square ($background, $height, $width, $duration){
+    transition-duration: $duration;
+    width: $width;
+    height: $height;
+    background: $background;
+    &:hover {
+        background: brown;
+        height: 200px;
+        width: 200px;
+    }
+}
+
+.colorChangingSquare {
+    @include square(black, 400px, 400px, 0.3s)
+}

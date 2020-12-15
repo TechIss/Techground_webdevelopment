@@ -157,7 +157,7 @@ nav {
     color: black;
 }
 
-#menu {
+.menu-container {
     padding: var(--padding);
     grid-area: menu;
     justify-content: center;
@@ -169,7 +169,7 @@ nav {
     "menu__image menu__container"
 }
 
-#menu__container {
+.menu-wrapper {
     display: grid;
     justify-content: center;
     grid-area: menu__container;

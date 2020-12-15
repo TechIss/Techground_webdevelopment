@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,QAAQ,CAAC;EACL,UAAU,EAAE,IAAI;EAChB,MAAM,EAAG,UAAU;EACnB,KAAK,EAAG,QAAQ;CACjB",
+    "sources": [
+        "../../opdracht6.scss"
+    ],
+    "names": [],
+    "file": "opdracht6.css"
+}

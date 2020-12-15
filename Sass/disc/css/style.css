@@ -1,0 +1,24 @@
+.button {
+  width: 300px;
+  height: 50px;
+  border-radius: none;
+  background-color: #2e9170;
+  -webkit-transition-duration: 0.6s;
+          transition-duration: 0.6s;
+}
+
+.button:hover {
+  background: #26e2df;
+  color: white;
+}
+
+button {
+  background: pink;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: purple;
+}
+/*# sourceMappingURL=style.css.map */

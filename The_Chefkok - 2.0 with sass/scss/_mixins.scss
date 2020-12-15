@@ -1,0 +1,78 @@
+@mixin banner {
+    justify-content: right;
+    width: 100%;
+    position: relative;
+    color: $blue;
+    font-family: $font-family;
+    .banner-content {
+        position: absolute;
+        top: 100px;
+        width: 100%;
+    }
+    img {
+        width: 100%;
+    }
+    span {
+        margin-left: 60%;
+        display: block;
+        font-weight: bold;
+    }
+    span.title{
+        font-size: $bannerHeading;
+        font-weight: bold;
+        padding-bottom: 10px;
+        text-transform: uppercase;
+    }
+    span.sub-tittle {
+        font-weight: bold;
+        font-size: 25px;
+        width: 400px;
+        padding-bottom: 15px;
+    }
+}
+
+@mixin titletwo {
+    font-size: $bannerHeading;
+    font-family: $font-family;
+    text-align: center;
+}
+
+@mixin gerechten {
+    margin-bottom: 5%;
+    padding-top: 80px;
+    padding-left: 10%;
+    position: relative;
+    font-family: $font-family;
+    display: block;
+    .banner-content{
+        padding-top: 10px;
+        position: absolute;
+        top: 100%;
+        width: 50%;
+    }
+    span.prijs{
+        margin-left: 75%;
+        text-align: right;
+    }
+    span.sub-tittle {
+        width: 10px;
+    }
+    span.show {
+        margin-left: 85%;
+        text-align: right;
+        
+    }
+}
+
+@mixin titlethree {
+    display: block;
+    font-size: $bannerHeading;
+    font-family: $font-family;
+    padding-top: 10%;
+    text-align: center;
+}
+
+@mixin menu {
+
+    
+}

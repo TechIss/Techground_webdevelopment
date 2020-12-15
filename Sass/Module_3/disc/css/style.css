@@ -1,0 +1,9 @@
+.main .main__button {
+  border-radius: none;
+  background-color: #2e9170;
+}
+
+.main .main__button:hover {
+  background: #26e2df;
+}
+/*# sourceMappingURL=style.css.map */

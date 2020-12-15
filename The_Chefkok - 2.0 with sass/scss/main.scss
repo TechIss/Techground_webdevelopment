@@ -1,0 +1,77 @@
+@import "./grids/gridcontainers";
+@import "./variables";
+@import "./resets";
+@import "./mixins";
+
+#navigationmenu {
+    background: $grey;
+    ul {
+        width: 100%;
+    }
+    li {
+        float: right;
+        width: 10%;
+    }
+    a {
+        color: black;
+        text-decoration: none;
+        font-family: $font-family;
+        padding: 16px;
+        display: block;
+        text-align: right;
+    }
+} // end #navigationmenu
+
+#navigationmenu ul::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.lead-banner {
+    background: $grey;
+    @include banner;
+} //end banner
+
+
+.titletwo {
+    background: $grey;
+    @include titletwo;
+}
+
+section h1 {
+    font-size: $sectionHeading;
+    color: grey;
+} //end tittle
+
+
+.wrapper-gerechten {
+    background: $grey;
+    @include gerechten;
+
+}
+
+.gerechten-container {
+    background: $grey;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    display: inline-flex;
+    padding-bottom: 10px;
+
+}
+
+.titlethree {
+    background: $grey;
+    @include titlethree;
+}
+
+.menu {
+    @include menu;
+    display: block;
+
+}
+
+
+
+

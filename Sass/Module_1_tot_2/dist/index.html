@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sass turorial</title>
+    <link rel="stylesheet" href="../disc/css/main.css" />
+  </head>
+  <body class="light">
+    <h1>LEMONADE</h1>
+    <div class="banner">
+      <div class="banner__slogan">
+        <span> homemade with fresh ingredients</span>
+      </div>
+    </div>
+    <div class="container">
+      <div class="container__icon">
+        fresh lemons
+        <img src="../img/lemon_PNG25201.png" width="50px"/>
+      </div>
+      <div class="container__icon">
+        real sugar
+        <img src="../img/lemon_PNG25201.png" width="50px"/>
+      </div>
+      <div class="container__icon">
+        dad's recipe
+        <img src="../img/lemon_PNG25201.png" width="50px"/>
+      </div>
+    </div>
+
+    <div class="opdracht4">
+      <figure>
+        <figure-caption>
+          Opdracht 4 - Nesten met de reference selector - the ampersand ( & )
+          De ‘&’ is een ontzettend handige feature in SASS. Je gebruikt het bij het nesten. Het kan je
+          veel tijd besparen bij het coderen. Kun jij uitzoeken wat je met de ‘&’ kunt en wat de
+          voordelen ervan zijn? Laat met een voorbeeld zien dat je begrijpt wat het voordeel is van het
+          gebruik van ‘&’ bij het nesten.
+        </figure-caption>
+      </figure>
+      <xmp>
+        .banner {
+          font-family: "Pacifico", cursive;
+          height: 400px;
+          background: url(/img/intro-1586182902.jpg);
+          #{&}__slogan {
+            background-color: $translucent-white;
+            position: absolute;
+            border: $standard-border;
+            top: 200px;
+            left: 25%;
+            width: 50%;
+            height: 200px;
+            text-align: center;
+        
+            & {
+              font-size: 24px;
+              line-height: 200px;
+            }
+          }
+        }
+      </xmp>
+      <p>Antwoord: Door het gebruik van de &-selector hoef je niet alles meer uit te typen wat normaal moet. Zie example</p>
+      <figure>
+        <figure-caption>
+          <xmp>
+            .banner {
+              font-family: "Pacifico", cursive;
+              height: 400px;
+              background: url(/img/intro-1586182902.jpg);
+            }
+            
+            .banner .banner__slogan {
+              background-color: rgba(255, 255, 255, 0.3);
+              position: absolute;
+              border: 4px solid black;
+              top: 200px;
+              left: 25%;
+              width: 50%;
+              height: 200px;
+              text-align: center;
+            }
+            
+            .banner .banner__slogan {
+              font-size: 24px;
+              line-height: 200px;
+            }
+          </xmp>
+        </figure-caption>
+        <p>Hierboven zie je de code in CSS. In een opslag zie je dat het 3 selectors heeft terwijl je in SCSS in 1 selector werkt. De nesting en de ampersand creeert de mogelijkheid om minder te typen, zodoende een overzichtelijk document. </p>
+      </figure>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+@import "./variables";
+
+@mixin button-style ($Background-color, $height, $width) {
+    background: $Background-color;
+    color: $Text-color;
+    height: $height;
+    width: $width;
+    &:hover{
+        background: $Background-hover-color;
+        color: $Text-hover-color;
+        border: solid 2px rgb(0, 208, 255);
+    }
+}
+
+.button {
+    @include button-style(blue, 100px, 100px);
+    border-radius: 20px;
+    border: solid 2px blue;
+    transition-duration: 0.5s;
+}
+
+

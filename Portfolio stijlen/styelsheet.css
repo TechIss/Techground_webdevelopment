@@ -270,10 +270,11 @@ table {
     background: var(--green);
 }
 
-@media only screen and (max-width:550px){
+@media only screen and (max-width:550px) and (orientation:portrait){
   #container {
+    font-size: 20px;
     grid-template-columns: 0.2fr;
-    grid-template-rows: 0.2fr 1fr 1.2fr;
+    grid-template-rows: 0.2fr 0.2fr 1.2fr;
     grid-template-areas: 
     "menu"
     "socialmedia"
@@ -281,4 +282,17 @@ table {
     "memberinfo__skills"
     "memberinfo__tools"
   }
+}
+
+  @media only screen and (max-height:500px) and (orientation:landscape){
+      #container {
+      grid-template-columns: 0.2fr;
+      grid-template-rows: 0.2fr 1.2fr;
+      grid-template-areas: 
+      "menu"
+      "socialmedia"
+      "memberinfo"
+      "memberinfo__skills"
+      "memberinfo__tools"
+    }
 }

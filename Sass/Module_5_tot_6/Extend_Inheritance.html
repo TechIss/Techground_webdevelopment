@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 5 & 6</title>
+    <link rel="stylesheet" href="/disc/css/opdracht6.css">
+</head>
+<body>
+    <h2>Module 5</h2>
+    <h3>Opdracht 1:</h3>
+    <p> @ mixins wordt gebruikt om een dynamisch style te creeren en @ extend gebruik je bij een stijl dat geshared moet worden tussen verschillende selectors</p>
+    <h3>Opdracht 2: DRY</h3>
+    <xmp>
+        $break-small: 320px;
+        $break-large: 1200px;
+
+        .profile-pic {
+            float: left;
+            width: 250px;
+            @media screen and (max-width: $break-small) {
+            width: 100px;
+            float: none;
+            }
+            @media screen and (min-width: $break-large) {
+                float: right;
+            }
+        }
+    </xmp>
+    <img src="./img/Sass - Handout Cursist.jpg" alt="">
+    <h2>Module 6</h2>
+    <p>Opdracht 1= height: 800px width: auto</p>
+    <p>Opdracht 2= height:500px width: auto</p>
+    <p>Opdracht 3= height:100px width: auto</p>
+    <p>Opdracht 4=- negatief geeft fout melding aan.</p>
+    <p>Opdracht 5= height:600px width: auto</p>
+    <p>Opdracht 6= height:750px width: auto</p>
+    <p>Opdracht 7= height:6px width: 6px</p>
+    <p>Opdracht 8= height:krijgt een error en werkt niet width: 6px. <br>
+    Wanneer je tussen haakjes met pixels wilt gebruiken, kan je geen px bij de math equation schrijven.</p>
+    <div class="content">
+
+      </div>
+    
+</body>
+</html>

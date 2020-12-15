@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "mappings": "ACcA,AAAA,OAAO,CAAC;EAXJ,UAAU,EAYY,IAAI;EAX1B,KAAK,ECHI,KAAK;EDId,MAAM,EAUsB,KAAK;EATjC,KAAK,EAS8B,KAAK;EACxC,aAAa,EAAE,IAAI;EACnB,MAAM,EAAE,cAAc;EACtB,mBAAmB,EAAE,IAAI;CAC5B;;AALD,AAPI,OAOG,AAPF,MAAM,CAAA;EACH,UAAU,ECNO,MAAM;EDOvB,KAAK,ECNM,IAAI;EDOf,MAAM,EAAE,KAAK,CAAC,GAAG,CAAC,OAAgB;CACrC;;AEGL,AAAA,oBAAoB,CAAC;EAXjB,mBAAmB,EAYkB,IAAI;EAXzC,KAAK,EAWyB,KAAK;EAVnC,MAAM,EAUiB,KAAK;EAT5B,UAAU,EASM,KAAK;CACxB;;AAFD,AAPI,oBAOgB,AAPf,MAAM,CAAC;EACJ,UAAU,EAAE,KAAK;EACjB,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,KAAK;CACf",
+    "sources": [
+        "../../style.scss",
+        "../../assets/_button.scss",
+        "../../assets/_variables.scss",
+        "../../assets/_colorChangingSquare.scss",
+        "../../assets/_variables.scss",
+        "../../assets/_variables.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}

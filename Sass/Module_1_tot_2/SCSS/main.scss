@@ -1,0 +1,70 @@
+@import "./resets";
+@import "./variables";
+
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
+
+@function weight($weight-name) {
+  @return map-get($font-weights, $weight-name);
+}
+
+// @mixin flexCenter($direction) {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     flex-direction: $direction;
+// }
+
+@mixin theme($light-theme: true) {
+  @if $light-theme {
+    background: lighten($primary-color, 100%);
+    color: darken($text-color, 100%);
+  }
+}
+
+h1 {
+  font-family: Roboto, sans-serif;
+  text-align: center;
+}
+
+.banner {
+  font-family: "Pacifico", cursive;
+  height: 400px;
+  background: url(/Module_1_tot_2/img/intro-1586182902.jpg);
+
+  #{&}__slogan {
+    background-color: $translucent-white;
+    position: absolute;
+    border: $standard-border;
+    top: 200px;
+    left: 25%;
+    width: 50%;
+    height: 200px;
+    text-align: center;
+
+    & {
+      font-size: 24px;
+      line-height: 200px;
+    }
+  }
+}
+
+.container {
+  text-align: center;
+  font-family: "Pacifico", cursive;
+
+  #{&}__icon {
+    display : inline-block ;
+    margin : 2% ;
+    border : $standard-border;
+    font-size : 32px ;
+    width: $icon-square-length;
+    height: $icon-square-length;
+
+    }
+  }
+
+.opdracht4 {
+    width: 80%;
+    margin: 0 auto;
+}
+

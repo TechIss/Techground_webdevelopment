@@ -1,0 +1,31 @@
+.button {
+  background: blue;
+  color: white;
+  height: 100px;
+  width: 100px;
+  border-radius: 20px;
+  border: solid 2px blue;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.button:hover {
+  background: purple;
+  color: pink;
+  border: solid 2px #00d0ff;
+}
+
+.colorChangingSquare {
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  width: 400px;
+  height: 400px;
+  background: black;
+}
+
+.colorChangingSquare:hover {
+  background: brown;
+  height: 200px;
+  width: 200px;
+}
+/*# sourceMappingURL=style.css.map */

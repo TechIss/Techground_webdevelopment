@@ -1,0 +1,11 @@
+@import "./assets/button";
+@import "./assets/color";
+
+button {
+    background: pink;
+    transition-duration: 0.4s;
+}
+
+button:hover{
+    background-color: purple;
+}
