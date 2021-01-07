@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javasscript</title>
+  </head>
+  <body>
+    <h1>Opdrachten over if statements met logical operators</h1>
+
+    <h2>Opdracht 9</h2>
+
+    <p>Programmeer de volgende logica in de checkNumber functie:</p>
+    <li>
+        Als het ingevoerde getal is gelijk aan 13 of is groter dan 13 en het ingevoerde getal is
+        gelijk aan 20 of kleiner dan 20, dan toon je op het label: “Het ingevoerde getal is
+        gelijk aan 11 of groter dan 11 en is gelijk aan 20 of kleiner dan 20.”.
+    </li>
+
+    <input type="number" name="number" id="number" />
+    <button id="btn" onclick="checkNumber()">Button</button>
+
+    <div>
+      <span id="label"></span>
+    </div>
+
+    <script>
+      function checkNumber() {
+        const inputNumber = document.getElementById("number").value;
+        const label = document.getElementById("label");
+
+        if (inputNumber >5 && inputNumber <10) {
+            label.innerHTML = "Het ingevoerde getal is tussen 5 en 10";
+        } else if  (inputNumber >= 13 && inputNumber <= 20 ) {
+            label.innerHTML = "Het ingevoerde getal is gelijk aan 11 of groter dan 11 en is gelijk aan 20 of kleiner dan 20";
+        }
+       
+
+        }
+
+
+
+      
+    </script>
+  </body>
+</html>
