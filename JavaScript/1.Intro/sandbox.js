@@ -155,7 +155,8 @@ console.log(words[3]);
 // expected output: "fox"
 
 const chars = str.split('');
-console.log(chars[8]);
+// console.log(chars[8]);
+console.log(words);
 // expected output: "k"
 
 //opdracht 16.5
