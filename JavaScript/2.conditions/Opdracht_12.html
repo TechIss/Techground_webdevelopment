@@ -8,13 +8,13 @@
   <body>
     <h1>Opdrachten over if statements met logical operators</h1>
 
-    <h2>Opdracht 9</h2>
+    <h2>Opdracht 12</h2>
 
     <p>Programmeer de volgende logica in de checkNumber functie:</p>
     <li>
-        Als het ingevoerde getal is gelijk aan 21 of het ingevoerde getal is gelijk aan 23 , dan
-        toon je op het label: “Het ingevoerde getal is gelijk aan 21 of is gelijk aan 23”.
-    </li>
+        Als het ingevoerde getal groter is dan 30 en kleiner is dan 35 of als het ingevoerde
+        getal groter is dan 40 of kleiner is dan 45, toon dan op het label: “het getal is tussen
+        30 en 35 of het getal is tussen 40 en 45.”    </li>
 
     <input type="number" name="number" id="number" />
     <button id="btn" onclick="checkNumber()">Button</button>
@@ -30,16 +30,16 @@
 
         if (inputNumber >5 && inputNumber <10) {
             label.innerHTML = "Het ingevoerde getal is tussen 5 en 10";
-        } else if (inputNumber == 21 || inputNumber == 23 ) {
-            label.innerHTML = "Het ingevoerde getal is gelijk aan 21 of is gelijk aan 23"
         } else if  (inputNumber >= 13 && inputNumber <= 20 ) {
             label.innerHTML = "Het ingevoerde getal is gelijk aan 11 of groter dan 13 en is gelijk aan 20 of kleiner dan 20";
+        } else if (inputNumber == 21 || inputNumber == 23 ) {
+            label.innerHTML = "Het ingevoerde getal is gelijk aan 21 of is gelijk aan 23";
+        } else if ((inputNumber >= 30 && inputNumber <= 35) || (inputNumber >= 40 && inputNumber <= 45)) {
+            label.innerHTML = "het getal is tussen 30 en 35 of het getal is tussen 40 en 45";
         } else {
             label.innerHTML = " ";
-        } 
-        
-
         }
+     }
 
 
 

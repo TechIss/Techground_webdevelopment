@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Functions</title>
+  </head>
+  <body>
+    <h1>Functions</h1>
+
+    <h2>Opdracht 2</h2>
+    <p>
+        Schrijf een functie waarbij je een tekst mee kan geven aan de functie. Print vervolgens de
+        tekst uit in de console.
+    </p>
+
+    <p>
+      Antwoord:
+      <xmp>
+            html:
+            <button onclick="answer()">click</button>
+            <span id="label"></span>
+
+            javascript:
+            let tekstHello = "Hello World"
+            console.log(tekstHello);
+
+            function answer () {
+            label.innerHTML = tekstHello;
+            }
+
+        </xmp>
+    </p>
+
+    <p id="answer"></p>
+
+    <button onclick="answer()">click</button>
+    <span id="label"></span>
+    <script src="./sandbox.js"></script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        var knikkers = 0; // Aantal opgegooide knikkers
+while(++knikkers <= 10)
+{
+    if(knikkers == 1)
+    {
+        document.write("1 knikker opgegooid, nog 9 in mijn zak.<br />");
+    }
+    else
+    {
+        document.write(knikkers + " knikkers opgegooid, nog " + (10 - knikkers) + " in mijn zak.<br />");
+    }
+}
+    </script>
+    
+</body>
+</html>

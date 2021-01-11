@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript (Moduel)</title>
+</head>
+<body>
+    <h1>Module Hoofdstuk</h1>
+
+    <h2>Opdracht 1</h2>
+    <p>
+        Opdracht beschrijven
+    </p>
+
+    <p>
+        Antwoord:
+        <xmp>
+            
+        </xmp>
+    </p>
+
+    <script src="./sandbox.js"></script>
+</body>
+</html>

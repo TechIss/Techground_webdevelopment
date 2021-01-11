@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javasscript</title>
+  </head>
+  <body>
+    
+    <h1>Opdracht 13</h1>
+    <p>Deze applicatie moet het volgende kunnen doen:</p>
+    <li>Het vertalen van getallen naar maanden. Bijvoorbeeld, als je het getal 1 invoert dan
+        toon je op het scherm “Januari”.</li>
+        <p>
+            <xmp>
+                ○ 1 => January.
+                ○ 2 => February.
+                ○ 3 => March.
+                ○ 4 => April.
+                ○ 5 => May.
+                ○ 6 => June.
+                ○ 7 => Juli.
+                ○ 8 => August.
+                ○ 9 => September.
+                ○ 10 => Oktober.
+                ○ 11 => November.
+                ○ 12 => December.
+            </xmp>
+        </p>
+
+    <h1>Translate months</h1>
+
+    <input type="number" name="number" id="number" />
+
+    <button onclick="translateMonth()">translate</button>
+
+    <span id="translatedMonth"></span>
+
+    <script>
+
+      
+      function translateMonth() {
+        const inputNumber = document.getElementById("number");
+        const translateMonth = document.getElementById("translatedMonth");
+        //don't freaking forget to make the variable INSIDE THE FUNCTION, WHY DID YOU EVEN DO THAT OUTSIDE LOL (JUST A REMINDER TO YOURSELF)
+        if (number.value == 1) {
+            translateMonth.innerHTML = "Januari";
+        } else if (number.value == 2) {
+            translateMonth.innerHTML = "Februari";
+        } else if (number.value == 3) {
+            translateMonth.innerHTML = "Maart";
+        } else if (number.value == 4) {
+            translateMonth.innerHTML = "April";
+        } else if (number.value == 5) {
+            translateMonth.innerHTML = "Mei";
+        } else if (number.value == 6) {
+            translateMonth.innerHTML = "Juni";
+        } else if (number.value == 7) {
+            translateMonth.innerHTML = "Juli";
+        } else if (number.value == 8) {
+            translateMonth.innerHTML = "Augustus";
+        } else if (number.value == 9) {
+            translateMonth.innerHTML = "September";
+        } else if (number.value == 10) {
+            translateMonth.innerHTML = "Oktober";
+        } else if (number.value == 11) {
+            translateMonth.innerHTML = "November";
+        } else if (number.value == 12) {
+            translateMonth.innerHTML = "December";
+        } 
+      }
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Functions</title>
+  </head>
+  <body>
+    <h1>Functions</h1>
+
+    <h2>Opdracht 2</h2>
+    <p>
+        Schrijf een functie die twee getallen met elkaar vermenigvuldigt en geef de waarde van de
+        vermenigvuldiging terug. Geef een goede functie naam ervoor.
+    </p>
+
+    <p>
+      Antwoord:
+      <xmp>
+            html:
+            <button onclick="answer()">click</button>
+            <span id="label"></span>
+
+            javascript:
+            let number1 = 2;
+            let number2 = 4;
+            console.log();
+            
+            function answer () {
+                // label.innerHTML = tekstHello;
+                label.innerHTML = number1 * number2;
+            }
+            }
+
+        </xmp>
+    </p>
+
+    <p id="answer"></p>
+
+    <button onclick="answer()">click</button>
+    <span id="label"></span>
+    <script src="./sandbox.js"></script>
+  </body>
+</html>
