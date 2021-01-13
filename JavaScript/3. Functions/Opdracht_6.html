@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang=“en”>
+<html lang="en">
 <head>
-    <meta charset=“UTF-8">
-    <meta name=“viewport” content=“width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript (Moduel)</title>
 </head>
 <body>
     <h1>Check Name</h1>
@@ -16,13 +16,26 @@
 
     <h1>Random Name</h1>
 
-    <button id="btn2" onclick='random(this)'>Random Name</button>
+    <button id="btn2" onclick='random()'>Random Name</button>
 
     <span id="label2"</span>
 
+    <p>Check this: <a href="https://www.w3schools.com/js/js_arrow_function.asp">Link</a> & this: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions">Link2</a></p>
+
     <script>
         const checkedName = document.getElementById('checkedName');
-        
+        const names = [
+            'John',
+            'Olly',
+            'Mo',
+            'Hendrik',
+            'Tony',
+            'Irus',
+            'Jan',
+            'Peter',
+            ];
+            const guessingName = names[Math.round(Math.random() * 7)];
+
         function checkName() {
             const name = document.getElementById('name').value;
 
@@ -49,24 +62,10 @@
             }
         }
 
-        function random(){
-
-            const names = [
-            'John',
-            'Olly',
-            'Mo',
-            'Hendrik',
-            'Tony',
-            'Irus',
-            'Jan',
-            'Peter',
-            ];
-        
-        
-            const guessingName = names[Math.round(Math.random() * 7)];
-            label2.innerHTML = guessingName;
+        (random) = (random) =>    
+            label2.innerHTML = guessingName + " is checked";
             console.log(guessingName);
-        }
+        
 
     </script>
 </body>
