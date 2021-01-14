@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- STEP 1: Make one table wiskunde -->
+    <!-- STEP 2: Attach a value to the cijfer -  how to get the value into the javascript -->
+    <!-- Step 3: Go to the second table Natuurkunde -> go to step 2 -->
+    <!-- Step 4: Attach value to the cijfer Natuurkunde-->
+    <!-- Step 5: Creat the result table - so you can check if the function works -->
+    <!-- Step 6: What are the conditions of the result table? -->
+    <!-- Step 7: Be specific about the variables -->
+    <!-- Step 8: Attach an id to every cijfer input field and combine it with the student (make use of brackets)-->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript Functions</title>
+        <style>
+
+            #container {
+                display: flex;
+                flex: wrap;
+                position: relative;
+            }
+
+            table {
+                text-align: left;
+                margin: 5px;
+                width: 50px;
+            }
+
+            th, td {
+            border: 1px solid black;
+            }
+
+            input {
+                border: none;
+            }
+            
+            #result table {
+                width: 400px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <!-- Will be comming back after loops -->
+        <h1>Functions</h1>
+    
+        <h2>Opdracht 8</h2>
+        <p>
+            Maak een nieuwe HTML bestand aan.
+            Wij gaan een applicatie maken om de cijfers van de studenten bij te houden. De leraar wilt op
+            een pagina de cijfers kunnen invullen en controleren of de studenten over kunnen gaan naar
+            de volgende klas. Met deze applicatie zorg je ervoor dat de leraar niet handmatig hoeft te
+            
+            berekenen wat de gemiddelde cijfers zijn per student. Hiermee heeft de leraar een compleet
+            overzicht van de studenten. Dat scheelt tijd voor de leraar!
+        </p>
+
+        <p>
+            <li>Voor de vakken wiskunde, natuurkunde, nederlands en engels een tabel met
+                studenten waarbij de cijfers bijgehouden worden.</li>
+            <li>Als de cijfer lager dan 5.5 is, dan is het veld rood.</li>
+            <li>Als de cijfer hoger of gelijk aan 5.5 is, dan is het veld groen.</li>
+            <li>Als de cijfer hoger of gelijk aan 7.5 is, dan is het veld donker groen.</li>
+            <li>Als je op de cijfer klikt kan de cijfer aangepast worden. Zodra het cijfer aangepast is,
+                dan wordt er opnieuw gekeken welke kleur het veld heeft (rood, groen of donker
+                groen)</li>
+            <li>Naast de vakken heb je nog een tabel waarmee je de gemiddelde cijfer berekent van
+                de vakken per student. De tabel houdt bij wat de gemiddelde cijfer is van de talen
+                (nederlands en engels) en de gemiddelde cijfer van de bètavakken (wiskunde en
+                natuurkunde).</li>
+            <li>Als de gemiddelde van de talen en de gemiddelde van de bètavakken gemiddeld
+                boven de 6.5 ligt, dan gaat de student over naar volgende klas.</li>
+                Zie hieronder de resultaat wat het moet worden:
+        </p>
+        
+        <img src="./img/JS - Handout Cursist.jpg" alt="Resultaat opdracht 8" style="width: 50%";> 
+
+        <hr style="width: 250%;">
+
+        <div id="container">
+        <div class="item1">
+        <h2>Wiskunde</h2>
+        <table>
+            <tr>
+                <th>Names</th>
+                <th>Cijfers</th>
+            </tr>
+            <tr>
+                <td>
+                    <span id="namePerson[1]" onclick="namePerson()">Willem</span>
+                </td>
+                <td><span id="gradeWiskunde[1]" onclick="gradePerson()">3</span></td>
+            </tr>
+            <tr>
+                <td>
+                    <span id="namePerson[2]" onclick="namePerson()">Jan</span>
+                </td>
+                <td><span id="gradeWiskunde[2]" onclick="gradePerson()">7</span></td>
+            </tr>
+            <tr>
+                <td>
+                    <span id="namePerson[3]" onclick="namePerson()">Kim Sing</span>
+                </td>
+                <td><span id="gradeWiskunde[3]" onclick="gradePerson()">10</span></td>
+            </tr>
+            <tr>
+                <td>
+                    <span id="namePerson[4]" onclick="namePerson()">Samantha</span>
+                </td>
+                <td><span id="gradeWiskunde[4]" onclick="gradePerson()">4</span></td>
+            </tr>
+            <tr>
+                <td>
+                    <span id="namePerson[5]" onclick="namePerson()">Joyce</span>
+                </td>
+                <td><span id="gradeWiskunde[5]" onclick="gradePerson()">5.5</span></td>
+            </tr>
+            <tr>
+                <td>
+                    <span id="namePerson[6]" onclick="namePerson()">Garreth</span>
+                </td>
+                <td><span id="gradeWiskunde[6]" onclick="gradePerson()">1</span></td>
+            </tr>
+        </table>
+        </div>
+    
+            </div>
+    </div>
+        <script src="./Opdracht_8.js"></script>
+
+
+    </body>
+    </html>
+
+</body>
+</html>

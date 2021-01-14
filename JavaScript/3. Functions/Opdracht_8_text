@@ -1,0 +1,109 @@
+
+
+        <!-- <div class="item2">
+        <h2>Natuurkunde</h2>
+
+        <table>
+            <tr>
+                <th>Names</th>
+                <th>Cijfers</th>
+            </tr>
+            <tr>
+                <td>
+                    Willem
+                </td>
+                <td><span id="natuurkunde[1]()"></td>
+            </tr>
+            <tr>
+                <td>
+                    Jan
+                </td>
+                <td><span id="natuurkunde[2]()"></td>
+            </tr>
+            <tr>
+                <td>
+                    Kim Sing
+                </td>
+                <td><span id="natuurkunde[3]()"></td>
+            </tr>
+            <tr>
+                <td>
+                    Samantha
+                </td>
+                <td><span id="natuurkunde[4]()"></td>            
+                </tr>
+            <tr>
+                <td>
+                    Joyce
+                </td>
+                <td><span id="natuurkunde[5]()"></td>            
+                </tr>
+            <tr>
+                <td>
+                    Gareth
+                </td>
+                <td><span id="natuurkunde[6]()"></td>            
+                </tr>
+        </table>
+
+        </div>
+
+        <div id="result">
+            <h2>Resultaat gemiddeld</h2>
+    
+            <table>
+                <tr>
+                    <th>Names</th>
+                    <th>Talen</th>
+                    <th>Beta Vakken</th>
+                    <th>Volgende klas? >6.5</th>
+                </tr>
+                <tr>
+                    <td>
+                        Willem
+                    </td>
+                    <td><span id="gemiddeldTalen[1]"></span></td>
+                    <td><span id="gemiddeldBeta[1]"></span></td>
+                    <td><span id="pass[1]"></span></td>
+                </tr>
+                <tr>
+                    <td>
+                        Jan
+                    </td>
+                    <td><span id="gemiddeldTalen[2]"></td>
+                    <td><span id="gemiddeldBeta[2]"></td>
+                    <td><span id="pass[2]"></td>                
+                </tr>
+                <tr>
+                    <td>
+                        Kim Sing
+                    </td>
+                    <td><span id="gemiddeldTalen[3]"></span></td>
+                    <td><span id="gemiddeldBeta[3]"></span></td>
+                    <td><span id="pass[3]"></span></td>
+                </tr>
+                <tr>
+                    <td>
+                        Samantha
+                    </td>
+                    <td><span id="gemiddeldTalen[4]"></span></td>
+                    <td><span id="gemiddeldBeta[4]"></span></td>
+                    <td><span id="pass[4]"></span></td>
+                </tr>
+                <tr>
+                    <td>
+                        Joyce
+                    </td>
+                    <td><span id="gemiddeldTalen[5]"></span></td>
+                    <td><span id="gemiddeldBeta[5]"></span></td>
+                    <td><span id="pass[5]"></span></td>
+                </tr>
+                <tr>
+                    <td>
+                        Gareth
+                    </td>
+                    <td><span id="gemiddeldTalen[6]"></span></td>
+                    <td><span id="gemiddeldBeta[6]"></span></td>
+                    <td><span id="pass[6]"></span></td>                
+                </tr>
+            </table> -->
