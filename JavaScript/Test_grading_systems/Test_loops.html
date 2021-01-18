@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript (Moduel)</title>
+</head>
+<body>
+    <h1>Module Hoofdstuk</h1>
+
+    <h3>Opdracht 1</h3>
+    <p>
+        Opdracht beschrijven
+    </p>
+
+    <p id = "test">
+    </p>
+
+    <p id = "test2">
+    </p>
+
+    <p id = "test3">
+    </p>
+    <script>
+        var text = "";
+        
+        var i = 0;
+        var x = 0;
+        var y = 0;
+        
+        while (i < 11) {
+        text += "<br>The number is " + i;
+        i++;
+        }
+        document.getElementById("test").innerHTML = text;
+
+
+        while (x < 22) {
+        text += "<br>The number is " + x++;
+        x++;
+        }
+        document.getElementById("test2").innerHTML = text;
+
+        while (y < 32) {
+        text += "<br>The number is " + y;
+        y+=3;
+        }
+        document.getElementById("test3").innerHTML = text;
+
+
+    </script>
+</body>
+</html>

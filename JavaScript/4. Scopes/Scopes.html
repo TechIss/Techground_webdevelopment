@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Scopes</title>
+</head>
+<body>
+    <h1>Module Scopes</h1>
+    <h2>Leerdoelen</h2>
+    <p>
+        <li>Global scopes</li>
+        <li>Block scopes</li>
+    </p>
+
+    <p>
+        <em>Javascript heeft twee scopes; global en local(blok) scopes. <br>
+        Elk variable declared buiten de functie behoort tot de gloabl scope en is overal in de code toegankelijk <br>
+        Elk functie heeft ook zijn eigen scope, dit noemt men "een local of een block scope". 
+        Elk variable dat in de function wordt geschreven behoort alleen tot de functie en is niet toegankelijk van buiten af.</em>
+    </p>
+
+    <h3>Opdracht 1</h3>
+    <p>
+        Scopes geeft de context aan waar de variables gedeclareerd worden. Dit geeft de
+        toegankelijkheid van de variables aan. <br> Afhankelijk van de scope kan je dus toegang krijgen
+        tot de waarde van de variable.
+    </p>
+
+    
+
+
+    <p>
+        <figcaption>Opdracht 1:</figcaption>
+        <p>Kijkend naar de volgende code:</p>
+        <xmp>
+            function printCar() {
+                const carBrand = "Volvo";
+                }
+                console.log(carBrand);
+        </xmp>
+        <p>Wat wordt er in de console gelogt? Wat voor scoping heb je hier te maken?</p>
+    </p>
+
+    <img src="./img/Opdracht_1.PNG" alt="Opdracht 1">
+    <p>
+        Dit is eeen voorbeeld van block-scope. <br>
+        Dit zie je aan de plek waar const staat. Dit is in de functie toegankelijk en niet buiten de functie. <br>
+        Je krijgt een error met deze code omdat de console.log buiten de functie is. <br>
+        Omdat de variable in de functie wordt beschreven kan console.log niet bij deze variable en ziet niks om de 'definen'.
+    </p>
+
+    <h3>Opdracht 2</h3>
+    <p>
+        Kijkend naar de volgende code:
+    </p>
+
+    <p>
+        <xmp>
+            let carName;
+            function printCar() {
+            carBrand = "Volvo";
+            }
+            console.log(carBrand);
+        </xmp>
+    </p>
+    <p>Wat wordt er in de console gelogt?</p>
+    <img src="./img/Opdracht_2.PNG" alt="Opdracht 2">
+
+    <p>
+        Dit is een voorbeeld van een global-scope.
+        Dat zie je aan de plek waar let staat. Dit is buiten de funcite en dus kan je er bij ook al ben je niet bezig in de funcite. <br>
+        Je krijgt nu een error, omdat en in de funcite een variable wordt genoemdt dat niet bestaat. Hetzelfde geldt voor de variable dat genoemd wordt in console.log.
+    </p>
+
+    <h3>Opdracht 3</h3>
+    <p>
+        Opdracht bescKijkend naar de volgende code:hrijven
+    </p>
+
+    <p>
+        <xmp>
+            function printCar() {
+                carBrand = "Volvo";
+                }
+                printCar();
+                console.log(carBrand);
+        </xmp>
+
+        Wat wordt er in de console gelogt?
+    </p>
+
+    <img src="./img/Opdracht_3.PNG" alt="Opdracht 3">
+
+    <p>
+        Hier staat de variable in de functie, maar wordt zo genoemd buiten de functie, dat het wel toegankelijk is. Dit komt omdat de funtie - de funtie heeft gekregen om een variable te roepen. <br>
+        Dit zie je aan de de naam na de functie. Deze wordt weer hergebruikt buiten de functie om. Zo wordt de funtie getriggerd om de gedeclareerde 'carBrand' te roepen. En de console.log logt de gedeclareerde variable carBrand.
+    </p>
+
+    <h3>Opdracht 4</h3>
+    <p>
+        Kijkend naar de volgende code:
+    </p>
+
+    <p>
+        <xmp>
+            function printCar() {
+                carBrand = "Volvo";
+                return function(type) {
+                console.log(carBrand + " " + type);
+                }
+                }
+                const car = printCar();
+                car("v40");            
+        </xmp>
+    </p>
+
+    <p>
+        Wat wordt er in de console gelogt? Hoe is dit anders voorgaande opdrachten? Lees
+        je meer over closures: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures">Link</a>
+    </p>
+
+    <img src="./img/Opdracht_4.PNG" alt="Opdracht 4">
+
+    <p>
+        Dit is een global scope. Dit kan je zien aan de const dat buiten de functie wordt beschreven als de type 'car'. <br>
+        De functie houdt in dat het de const variable en de functie hetzelfde is. In de funtie wordt beschreven wat het inhoudt. <br>
+        De carBrand wordt wordt in de funtie beschreven, evenals de console.log. Zou je deze code op een andere manier kunnen schrijven? Dat ga ik even uitproberen. <br>
+    </p>
+
+    <p>
+        <xmp>
+            function printCar() {
+                carBrand = "Volvo";
+                return function(type) {
+                }
+                }
+                const car = printCar();
+                car("v40");           
+                console.log(carBrand + " " + type);
+ 
+        </xmp>\
+        Antwoord is 'Nee':
+        <img src="./img/Opdracht_4_test_1.PNG" alt="Test 1">
+    </p>
+
+    <p>
+        <xmp>
+            function printCar() {
+                carBrand = "Volvo";
+                car("v40");   
+                }
+
+                const car = printCar();
+                console.log(carBrand + " " + type);
+ 
+        </xmp>\
+        Antwoord is 'Nee':
+        <img src="./img/Opdracht_4_test_2.PNG" alt="Test 1">
+    </p>
+
+    <p>
+        <xmp>
+            function printCar() {
+                carBrand = "Volvo";
+                car("v40");   
+                }
+                return function(type) {
+                }
+                const car = printCar();
+                console.log(carBrand + " " + type);
+ 
+        </xmp>\
+        Antwoord is 'Nee':
+        <img src="./img/Opdracht_4_test_3.PNG" alt="Test 1">
+    </p>
+
+    <p>
+        <xmp>
+            function printCar() {
+                carBrand = "Volvo";
+   
+                return function(type) {
+                    console.log(carBrand + " " + type);
+                    car("v40");
+                }
+                }
+
+                const car = printCar();
+ 
+        </xmp>\
+        Antwoord is 'Nee':
+        <img src="./img/Opdracht_4_test_4.PNG" alt="Test 1">
+    </p>
+
+    <p>
+        <xmp>
+            function printCar() {
+                    
+                carBrand = "Volvo";
+
+                return function(type) {
+                    const car = printCar();
+
+                    console.log(carBrand + " " + type);
+                    car("v40");
+                                    const car = printCar();
+
+                }
+                }
+ 
+        </xmp>\
+        Antwoord is 'Nee':
+        <img src="./img/Opdracht_4_test_5.PNG" alt="Test 1">
+    </p>
+
+    <script>
+                // function printCar() {
+                // const carBrand = "Volvo";
+                // }
+                // console.log(carBrand);
+
+                // let carName;
+                // function printCar() {
+                // carBrand = "Volvo";
+                // }
+                // console.log(carBrand);
+
+                // function printCar() {
+                // carBrand = "Volvo";
+                // }
+                // printCar();
+                // console.log(carBrand);
+
+                function printCar() {
+                    
+                carBrand = "Volvo";
+
+                return function(type) {
+                    const car = printCar();
+
+                    console.log(carBrand + " " + type);
+                    car("v40");
+                                    const car = printCar();
+
+                }
+                }
+
+ 
+    </script>
+</body>
+</html>
