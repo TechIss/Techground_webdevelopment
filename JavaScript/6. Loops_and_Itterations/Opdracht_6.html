@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Loops</title>
+  </head>
+  
+  <body>
+
+    <h3>Module Loops & Iterators</h3>
+
+    <p>Maak gebruik van een loop en itereer de sports array heen. Print het 1 voor 1 uit in jouw
+      console.</p>
+
+    <ul></ul>
+
+    <script>
+      const sports = [
+        "voetbal",
+        "basketbal",
+        "volleybal",
+        "hockey",
+        "honkbal",
+        "zwemmen",
+        "kortbal",
+      ];
+
+      const ul = document.querySelector("ul");
+
+
+      for (let sport of sports){
+        console.log(sport);
+        let li=document.createElement('li');
+        ul.appendChild(li);
+        li.innerHTML = sport;
+        
+      }
+ 
+    </script>
+  </body>
+</html>

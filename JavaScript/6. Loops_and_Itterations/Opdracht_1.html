@@ -7,7 +7,14 @@
   </head>
   
   <body>
-    <div id="answer"></div>
+
+    <h3>Module Loops & Iterators</h3>
+
+    <p>Maak gebruik van een loop en itereer de sports array heen. Print het 1 voor 1 uit in jouw
+      console.</p>
+
+    <ul></ul>
+
     <script>
       const sports = [
         "voetbal",
@@ -19,14 +26,16 @@
         "kortbal",
       ];
 
-      let i = 0;
+      const ul = document.querySelector("ul");
 
-      do {
-        alert (sports[0, 1, 2, 3, 4, 5, 6]);
-        i++
-      } while 
-        (i <7);
-  
+
+      for (let sport of sports){
+        console.log(sport);
+        let li=document.createElement('li');
+        ul.appendChild(li);
+        li.innerHTML = sport;
+      }
+ 
     </script>
   </body>
 </html>
