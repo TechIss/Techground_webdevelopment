@@ -188,18 +188,13 @@
 
         <xmp>
             Vervolgens kun je de waarde gebruiken als index en de fruitsoort printen in jouw console.
-            const randomNumber = numbers[Math.round(Math.random() *5)];
-            console.log(randomNumber);
-
-            let randomFruit = fruiten;
-
-            fruits= numbers % fruiten;
-
-            document.getElementById("randomFruiten").innerHTML = fruits;
-            console.log(randomFruit);
+            let math = Math.floor(Math.random()* numbers.length);
+            console.log(math);
+            
+            console.log(fruiten[math % 5]);
         </xmp>
     </p>
-
+    <img src="./img/Opdracht_5.PNG" alt="Opdracht 5">
     <p id="randomFruiten"></p>
 
     <h3>Opdracht 6</h3>
@@ -335,9 +330,18 @@
     
         <p>
             <xmp>
+                let fruiten = [];
+
+                fruiten = ['peer', 'appel', 'banaan', 'kersen', 'aardbei'];
+    
+                fruiten.splice(1, 1, "sinaasappel");
+                document.getElementById('Opdracht8').innerHTML = fruiten;
+                
 
             </xmp>
         </p>
+
+        <p id="Opdracht8"></p>
 
     <h3>Opdrahct 9</h3>
     <p>Kijkend naar de fruits array. Hoe draai je de values “Aardbei” en “Mandarijn” om in de array
@@ -345,9 +349,12 @@
 
         <p>
             <xmp>
-                
+                [arr[0], arr[1]] = [arr[1], arr[0]];
+
             </xmp>
         </p>
+
+        <p id="Opdracht9"></p>
     <script src="./sandbox.js"></script>
 </body>
 </html>
