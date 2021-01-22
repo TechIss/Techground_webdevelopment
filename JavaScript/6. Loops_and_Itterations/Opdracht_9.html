@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript (Moduel)</title>
+</head>
+<body>
+    <h1>Module Loop & Iterators</h1>
+
+    <h3>Opdracht 1</h3>
+    <p>
+        Stel je hebt het volgende array met random getallen:    </p>
+        <ul>[2,7,5,10,4,9,3,1,8,6]</ul>
+        Bubble sort is een hele bekende sorterings algoritme. Hiermee kun je de array met random <br>
+        getallen sorteren van klein naar groot. Je mag bij deze oefening geen gebruik maken van de <br>
+        sort() functie. Lees je in hoe Bubble sort werkt: <a href="https://en.wikipedia.org/wiki/Bubble_sort" target="_blank">Link</a> en <br>
+        codeer de sorterings algoritme uit.
+    <p>
+        Wat is bubble sort?
+        Hij vergelijk in een array 2 cijfers naast elkaar en swapt het wanneer de eerste cijfer van de tweegroter is dan de tweede cijfer van de '2 cijfers'.
+        <br> 
+        Voorbeeld:
+        [( 5 1 4 2 8 ) → ( 1 5 4 2 8 )]
+        Hij vergelijkt array cijfer 1 met array cijfer 2, daar komt een uitkomst uit. <br>
+        Als array cijfer 1 groter is dan array cijfer 2, swapt hij de cijfers van plek. <br>
+        Als hij dat heeft gedaan, dan vergelijkt hij array cijfer 2 met array cijfer 3. Het zelfde gebeurd hier ook, als de 1e cijfer groter is dan de 2e cijfer, dan swapt hij de cijfers van plek. <br>
+        Daarna vergelijkt hij cijfer 3 met cijfer 4, en weer kijkt hij of de eerste cijfer groter is dan de tweede cijfer.
+    </p>
+
+    <span id="label"></span>
+    <script>
+
+        //stap 1: wat is Bubble Sort? Klik op link
+        //stap 2: Bubble sort 
+        //stap 3: wat moeten we hebben: een array, een loop, de itteratie
+
+        //dit is de array
+
+        // console.log(Bubble_sort);
+
+        //dit is de funtie voor de loop
+        function bubbleSort(array){
+
+            for (let i = 0; i < array.length - 1; i++) {
+
+
+                // hier is wat de loop doet
+
+
+                 //het uitleg was als je twee emmers heb a en b.
+            // a = 1 en b= 2
+            // Hoe wil je a = b krijgen en b = a?
+            // als je nu a met b swapt heb je a = b, maar b = (?) Omdat je de value van a hebt geswapt met b is de verwachte uitkomst: b = b.
+            // want a is veranderd naar het getal in variable b.
+
+                // om de cijfers te kunnen swappen moet de funtie ook het getal van a onthouden. Net als bij opdracht 8.
+                // We moeten dus een variable in de funtie implementeren die dat doet. Want deze cijfer wordt dan weer vergeleken met de volgende cijfer.
+            for (let j = 0; j < array.length - 1 - i; j++) {
+                 if (array[j] > array[j+1]) {
+                     const temp = array[j];
+                     array[j] = array[j+1];
+                     array[j+1] = temp;
+                 }
+             }
+            }
+
+           
+            
+            document.getElementById("label").innerHTML = array;
+            return array;
+        }
+
+
+        console.log(bubbleSort([2, 7, 5, 10, 4, 9, 3, 1, 8, 6]));
+        
+        
+
+    </script>
+</body>
+</html>

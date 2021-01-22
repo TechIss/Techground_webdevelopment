@@ -11,7 +11,7 @@
     <h3>Opdracht 8</h3>
     <p>
         Maak een for loop die van 0 t/m 50 itereert. Een hele bekende oefening is de fibonacci <br>
-        reeks. Lees je in hoe fibonacci reeks werkt: https://www.fibonicci.com/nl/rij-van-fibonacci/. <br>
+        reeks. Lees je in hoe fibonacci reeks werkt: <a href="https://www.fibonicci.com/nl/rij-van-fibonacci/" target="_blank">link</a>. <br>
         Neem zelf eerst de tijd om dit uit te coderen, want op internet staat letterlijk het antwoord. <br>
         Het gaat hier om het aanleren van bepaalde denkwijze om dit op te lossen. Maak hiervoor <br>
         een stappenplan en werkt dit uit in code.
@@ -25,7 +25,39 @@
     </p>
 
     <script>
+        // Itereer : gedaan met while i < hoe vaak? - i wordt gedefinieerd voor de while loop
+
+        // Fibonacci :  0,  1,  1,  2,  3,  5,  8,  13,  21,  34, 55
+
+        // Stap 1: Wat moet ik doen?
+        // Antwoord: ik moet eerst een while loop maken die 50 keer itereert.
+
+        // Stap 2: Hoe moet ik er voor zorgen dat het twee keer de 0 en 1 krijgt?
+        // Ik moet er zien achter te komen wat de math is in dit reeks.
+
+        //stap 3: Testen
+
+        // a+b =
+        // b = 
+        // resultaat = 
+
+        let a = 1;
+        let b = 0;
+        let resultaat = b;
         
+        //resultaat moet een 0 zijn : van a+b : moet uitgeprint worden als 0
+
+        for (i=0; i < 11; i++){
+            //op deze punt moet hij itereren tot 50
+            console.log(resultaat);
+
+            //resultaat a+b
+            resultaat = a + b;
+            a = b;
+            b = resultaat;
+        }
+
+
+
+
     </script>
-</body>
-</html>
