@@ -1,0 +1,39 @@
+#Rekenmachine {
+    background: black;
+    width: 400px;
+    height: 500px;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    display: block;
+    margin: 100px;
+    border-radius: 50%;
+}
+
+#ledScherm {
+    background: grey;
+    width: 200px;
+    height: 100px;
+    position:absolute;
+    top: 50px;
+    left: 100px;
+}
+
+#containerButtons {
+    position: absolute;
+    top: 180px;
+    left: 55px;
+    flex-direction: row;
+    width: 300px;
+}
+
+button {
+    width: 55px;
+    height: 55px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+button:nth-of-type(18){
+    width: 114px;
+}
