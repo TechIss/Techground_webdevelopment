@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Objects</title>
+</head>
+<body>
+    <h1>Module Objecten</h1>
+
+    <h3>Opdracht 6</h3>
+    <p>
+        De nieuwe manier van objecten creëren kan je ook gebruik maken van classes. <br> Lees je in
+        over classes: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes">Link</a>
+        <br>
+        Zet opdracht 4 om in classes i.p.v object constructors.
+        <em>Hoisting</em>
+        An important difference between function declarations and class declarations is that function declarations are hoisted and class declarations are not. <br>
+        You first need to declare your class and then access it, otherwise code like the following will throw a ReferenceError:
+    </p>
+
+    <p>
+        Antwoord:
+        <div id="demo"></div>
+
+        <xmp>
+            class Person  {
+                constructor(namen, age) {
+                    this.namen = namen;
+                    this.age = age;
+                }
+            }
+                newName = new Person ("Jan", 24);
+                document.getElementById("demo").innerHTML =
+                newName.namen + " " + newName.age;
+        </xmp>
+    </p>
+
+    <script>
+    
+    
+    class Person  {
+        constructor(namen, age) {
+            this.namen = namen;
+            this.age = age;
+        }
+    }
+        newName = new Person ("Jan", 24);
+        document.getElementById("demo").innerHTML =
+        newName.namen + " " + newName.age;
+    </script>
+</body>
+</html>

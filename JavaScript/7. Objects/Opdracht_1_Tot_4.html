@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="clubs" class="clubs"></div>
+    <div id="Names" class="Names"></div>
+    <script>
+      //Opdracht 1
+      // Maak een Object die club info bijhoudt: Naam van de club, Type sport, Aantal leden
+      let club = function(nameClub, typeSport, aantal) {
+        this.nameClub = nameClub;
+        this.typeSport = typeSport;
+        this.aantal = aantal;
+      };
+      // Opdracht 3
+      // Maak een lijst aan en voeg 4 Club objecten toe aan de lijst. Itereer over de lijst heen en print de verschillende clubnamen
+      // uit op jouw pagina.
+
+      let clubs1 = [
+        new club("Doener", "Debat club", 5),
+        new club("Ajax", "Voetbal club", 5),
+        new club("Feyenoord", "Soccer club", 5),
+        new club("Potion Maker", "Love Potion", 5),
+      ]
+       
+      for (let club of clubs1){
+        console.log(Object.values(club));
+      }
+      //Opdracht 2
+      // Maak een Object van contactgegevens en voeg dat ook toe aan de club object: Contactgegevens - Adres - Telefoonnr - Contactpersoon
+      const contactGegevens = function (adres, telefoon, contactpersoon) {
+        this.adres = adres;
+        this.telefoon = telefoon;
+        this.contactpersoon = contactpersoon;
+      }
+
+      // Opdracht 4
+      //Kopieer deze code:
+      const Person = function (name, age) {
+        this.name = name;
+        this.age = age;
+      };
+
+      const Persons = [
+        new Person("Jan", 24),
+        new Person("Klaas", 15),
+        new Person("Yanis", 42),
+        new Person("Rupel", 55),
+        new Person("Hendrik", 32),
+        new Person("Mono", 28),
+        new Person("West", 23),
+
+      ];   
+
+      for (let Person of Persons){
+        console.log(Object.values(Person));
+       
+      }
+      console.log("========");
+      // Sorteer persons op leeftijd van klein naar groot.
+
+      Persons.sort(function (a, b) {
+        return a.age - b.age;
+      });
+
+      for (let Person of Persons){
+        console.log(Object.values(Person));
+      }
+    </script>
+  </body>
+</html>
+

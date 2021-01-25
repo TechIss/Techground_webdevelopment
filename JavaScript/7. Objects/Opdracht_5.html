@@ -1,0 +1,59 @@
+   <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+  </head>
+  <body>
+    
+    <h3>Opdracht 5</h3>
+    <p>
+        Maak nu een Person object door gebruik te maken van Object initializers. Wat zou eventueel
+        de voor en nadelen t.o.v Object constructors?       
+        <xmp>var obj = { name: "value", .... }</xmp>
+
+        De voorbeeld hierboven heb ik ergens gevonden. Het lijkt mij dat initializers betekent:
+        Een  object initializer is een uitdrukking waarmee we een nieuw gemaakt object kunnen initialiseren. Het is een door komma's gescheiden lijst van nul of meer paren van eigenschapsnamen en bijbehorende waarden van een object tussen een paar accolades {}. 
+    </p>
+    <div id="clubs" class="clubs"></div>
+
+
+    <div id="Names" class="Names"></div>
+    <script>
+
+// Opdracht 5
+      // Maak nu een Person object door gebruik te maken van Object initializers. Wat zou eventueel
+      // de voor en nadelen t.o.v Object constructors?
+      const Person5 = function (names, ages) {
+        this.names = names;
+        this.ags = ages;
+      };
+
+      const Persons5 = [
+        { name: "Raul", age: 27 },
+        { name: "Jose", age: 55 },
+        { name: "Maria", age: 52 },
+        { name: "Jesus", age: 18 },
+        { name: "Neo", age: 2 }
+      ];   
+      Persons5.sort(function (a, b) {
+        return a.ages - b.ages;
+      });
+      for (let Person5 of Persons5){
+        console.log(Object.values(Person5));
+      }
+      console.log("========");
+      Persons5.sort(function (a, b) {
+        return a.age - b.age;
+      });
+
+      for (let Person5 of Persons5){
+        console.log(Object.values(Person5));
+      }
+
+    </script>
+  </body>
+</html>

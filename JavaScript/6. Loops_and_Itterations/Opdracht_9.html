@@ -58,12 +58,21 @@
                 // We moeten dus een variable in de funtie implementeren die dat doet. Want deze cijfer wordt dan weer vergeleken met de volgende cijfer.
             for (let j = 0; j < array.length - 1 - i; j++) {
                  if (array[j] > array[j+1]) {
+                     console.log(i);
+
+                     //korter versie
+
+                    /** /
+                    [array[j], array[j+1]] = [array[j+1], array[j]]
+                    /*/
                      const temp = array[j];
                      array[j] = array[j+1];
                      array[j+1] = temp;
+                     /**/
                  }
              }
             }
+
 
            
             
@@ -72,7 +81,13 @@
         }
 
 
-        console.log(bubbleSort([2, 7, 5, 10, 4, 9, 3, 1, 8, 6]));
+        //willen wij dat de funtie de value veranderd of niet?
+        //Nee, dan moeten we een copy maken van de numbers.
+        let x = [2, 7, 5, 10, 4, 9, 3, 1, 8, 6];
+        console.log(x);
+
+
+        console.log(bubbleSort(x));
         
         
 
