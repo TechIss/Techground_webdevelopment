@@ -44,25 +44,28 @@
 
     <div id="Rekenmachine">
         <div id="ledScherm">
-            <input type="text" name="displayAnswer" id="displayAnswer" placeholder="0">
+            <input type="text" placeholder="0" id=answers class="field">
         </div>
         <div id="containerButtons">
-            <button id="divide"     onclick="divide()" value="/">/</button>
-            <button id="multiply"     onclick="multiply()" value="*">X</button>
-            <button id="minus"     onclick="minus()" value="-">-</button>
-            <button id="answer"     onclick="answer()" value="=">=</button>
-            <button id="7"     onclick="7()" value="7">7</button>
-            <button id="8"     onclick="8()" value="8">8</button>
-            <button id="9"     onclick="9()" value="9">9</button>
-            <button id="plus"     onclick="plus()" value="+">+</button>
-            <button id="4"     onclick="4()" value="4">4</button>
-            <button id="5"     onclick="5()" value="5">5</button>
-            <button id="6"     onclick="6()" value="6">6</button>
-            <button id="komma" onclick="komma()" value="Komma">.</button>
-            <button id="2"     onclick="2()" value="2">2</button>
-            <button id="3"     onclick="3()" value="3">3</button>
-            <button id="0"     onclick="0()" value="0">0</button>            
-            <button id="1"     onclick="1()" value="1">1</button>
+            <button id="btn-clearInterval" onclick="clearInput(this)" value="clearInput">C</button>
+            <button id="btn-equations" onclick="equations(this.value)" value="%">%</button>
+            <button id="btn-equations" onclick="equations(this.value)" value="/">/</button>
+            <button id="btn-equations" onclick="equations(this.value)" value="*">X</button>
+            <button id="btn-equations" onclick="equations(this.value)" value="-">-</button>
+            <button id="btn-equations" onclick="equations(this.value)" value="=">=</button>
+            <button id="btn-equations" onclick="equations(this.value)" value="+">+</button>
+            <button id="btn" onclick="Numbs(this.value)"    value="9">9</button>
+            <button id="btn" onclick="Numbs(this.value)"    value="8">8</button>
+            <button id="btn" onclick="Numbs(this.value)"    value="7">7</button>
+            <button id="btn" onclick="Numbs(this.value)"    value="6">6</button>
+            <button id="btn" onclick="Numbs(this.value)"    value="5">5</button>
+            <button id="btn" onclick="Numbs(this.value)"    value="4">4</button>
+            <button id="btn" onclick="Numbs(this.value)"    value="3">3</button>  
+            <button id="btn" onclick="Numbs(this.value)"    value="2">2</button>        
+            <button id="btn" onclick="Numbs(this.value)"    value="1">1</button>
+            <button id="btn-equations" onclick="equations(this.value)" value=",">.</button>
+            <button id="btn" onclick="Numbs(this.value)"    value="0">0</button>
+
         </div>
     </div>
 

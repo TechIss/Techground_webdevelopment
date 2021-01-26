@@ -1,7 +1,7 @@
 #Rekenmachine {
   background: black;
   width: 400px;
-  height: 500px;
+  height: 550px;
   -ms-flex-line-pack: center;
       align-content: center;
   -webkit-box-pack: center;
@@ -31,6 +31,14 @@
       -ms-flex-direction: row;
           flex-direction: row;
   width: 250px;
+}
+
+button:first-child {
+  width: 115px;
+}
+
+button:last-child {
+  width: 115px;
 }
 
 button {

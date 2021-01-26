@@ -1,7 +1,7 @@
 #Rekenmachine {
     background: black;
     width: 400px;
-    height: 500px;
+    height: 550px;
     align-content: center;
     justify-content: center;
     position: relative;
@@ -26,7 +26,13 @@
     flex-direction: row;
     width: 250px;
 }
+button:first-child {
+    width: 115px;
+}
 
+button:last-child {
+    width: 115px;
+}
 button {
     width: 55px;
     height: 55px;
@@ -49,5 +55,5 @@ input {
 ::placeholder {
     color: honeydew;
     text-align: right;
-
 }
+
