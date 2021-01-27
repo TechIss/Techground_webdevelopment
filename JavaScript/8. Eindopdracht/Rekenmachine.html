@@ -43,11 +43,11 @@
     </xmp>
 
     <div id="Rekenmachine">
-        <div id="ledScherm">
-            <input type="text" placeholder="0" id=answers class="field">
+        <div id="display">
+            <input type="text" placeholder="0" id="display_answer" class="field" name="Field">
         </div>
         <div id="containerButtons">
-            <button id="btn-clearInterval" onclick="clearInput(this)" value="clearInput">C</button>
+            <button id="btn-clearInterval" onclick="rekenmachine.display_answer.value += '0'" value="0C">AC</button>
             <button id="btn-equations" onclick="equations(this.value)" value="%">%</button>
             <button id="btn-equations" onclick="equations(this.value)" value="/">/</button>
             <button id="btn-equations" onclick="equations(this.value)" value="*">X</button>
@@ -65,7 +65,6 @@
             <button id="btn" onclick="Numbs(this.value)"    value="1">1</button>
             <button id="btn-equations" onclick="equations(this.value)" value=",">.</button>
             <button id="btn" onclick="Numbs(this.value)"    value="0">0</button>
-
         </div>
     </div>
 
