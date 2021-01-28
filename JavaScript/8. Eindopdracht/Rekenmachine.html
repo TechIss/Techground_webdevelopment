@@ -47,12 +47,13 @@
             <input type="text" placeholder="0" id="display_answer" class="field" name="Field">
         </div>
         <div id="containerButtons">
-            <button id="btn-clearInterval" onclick="rekenmachine.display_answer.value += '0'" value="0C">AC</button>
+            <input type="reset" id="resetButton" onclick="reset()" value="AC">
+            <button id="btn-equations" onclick="PlusMinus(this.value)" value="+/-">+/-</button>
             <button id="btn-equations" onclick="equations(this.value)" value="%">%</button>
             <button id="btn-equations" onclick="equations(this.value)" value="/">/</button>
             <button id="btn-equations" onclick="equations(this.value)" value="*">X</button>
             <button id="btn-equations" onclick="equations(this.value)" value="-">-</button>
-            <button id="btn-equations" onclick="equations(this.value)" value="=">=</button>
+            <button id="btn-equations" class="" onclick="Answer(this.value)" value="=">=</button>
             <button id="btn-equations" onclick="equations(this.value)" value="+">+</button>
             <button id="btn" onclick="Numbs(this.value)"    value="9">9</button>
             <button id="btn" onclick="Numbs(this.value)"    value="8">8</button>
@@ -63,7 +64,7 @@
             <button id="btn" onclick="Numbs(this.value)"    value="3">3</button>  
             <button id="btn" onclick="Numbs(this.value)"    value="2">2</button>        
             <button id="btn" onclick="Numbs(this.value)"    value="1">1</button>
-            <button id="btn-equations" onclick="equations(this.value)" value=",">.</button>
+            <button id="btn-equations" onclick="equations(this.value)" value=".">.</button>
             <button id="btn" onclick="Numbs(this.value)"    value="0">0</button>
         </div>
     </div>

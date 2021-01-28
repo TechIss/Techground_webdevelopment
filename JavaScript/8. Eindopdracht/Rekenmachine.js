@@ -10,33 +10,58 @@
 //We hebben cijfers en mathematical equations.
 
 //Varialbelen
-const textarea = document.getElementById('display_answer');
+// const textarea = document.getElementById('display_answer');
 const resetten = document.getElementById("btn-clearInterval");
 
 // let word = obj.querySelector('span').innerHTML;
 
 //Hier heb ik de number buttons gedeclareed en het werkt in de console log.
 function Numbs(val){
-result = document.getElementById('btn');  
+// result = document.getElementById('btn');  
 val = parseInt(val);
-document.getElementById("display_answer").value= val;
+document.getElementById("display_answer").value += val;
 console.log(typeof(val));
-
+console.log(val);
 }
 
 //Hier wil ik de equation buttons laten werken
 function equations(val) {
-  result = document.getElementById('btn-equations');  
+  // console.log(val);
+  //+= moet het value in de box zetten
+  document.getElementById("display_answer").value += val;
+  console.log(typeof(val));
   console.log(val);
-  document.getElementById("display_answer").value= val;
 }
 
-//Hier wil ik mijn C
-//  function reset(){
-//   result = document.getElementById('equations').innerHTML = text;
+function PlusMinus() {
+  let nummer = document.getElementById("display_answer").innerText;
+  console.log(nummer);
+}
 
-//    text = 0;
-//  }
+
+function Answer() {
+  document.getElementById("display_answer").value = eval(document.getElementById("display_answer").value);
+
+  //laten we eerst kijken of we de functies in een string kan plaatsen:
+  //de string bestaat uit een value van Numbs + de equation value + Numbs value (" 8 + 8 ") Check
+  
+  // document.getElementsByClassName("Answers").value = Numbs.value + equation + Numbs.val ;
+  // console.log(Answers);
+  //Hier moer ik het = value aanspreken
+  // obj.querySelector("=") = Answer;   
+  // Answer = Numbs.val && equations.val && Numbs.val;
+  //Als ik klik op = moet hij de ingevulde cijfers berekenen.
+}
+
+
+//Hier wil ik mijn C
+ function reset(){
+  document.getElementById("display_answer").value = document.querySelector("reset");
+  
+  let text = "C";
+  document.getElementById("resetButton").value = text;
+
+ }
 
 // function Calculator (){
 //   Numbs;

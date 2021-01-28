@@ -57,6 +57,18 @@ input {
   font-size: 50px;
   font-style: white;
   width: 100px;
+  text-align: right;
+}
+
+#resetButton {
+  position: absolute;
+  background: blueviolet;
+  top: 240px;
+  left: 180px;
+  height: 55px;
+  border-radius: 5px;
+  font-size: 20px;
+  width: 50px;
 }
 
 ::-webkit-input-placeholder {
