@@ -24,18 +24,26 @@ console.log(typeof(val));
 console.log(val);
 }
 
+
 //Hier wil ik de equation buttons laten werken
 function equations(val) {
   // console.log(val);
-  //+= moet het value in de box zetten
+  //+= onthoudt het vorige value en plaats de volgende er naast.
   document.getElementById("display_answer").value += val;
   console.log(typeof(val));
   console.log(val);
 }
 
 function PlusMinus() {
-  let nummer = document.getElementById("display_answer").innerText;
-  console.log(nummer);
+  let nummer = document.getElementById("display_answer");
+  let x = nummer.value;
+  x = x * -1;
+  nummer.value = x;
+  // result = function () {
+  //   document.getElementById("display_answer").innerText * -1;
+  // }
+
+  console.log(nummer.value);
 }
 
 
