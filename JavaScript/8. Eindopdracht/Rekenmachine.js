@@ -32,13 +32,16 @@ function equations(val) {
   document.getElementById("display_answer").value += val;
   console.log(typeof(val));
   console.log(val);
+  //Er mag alleen 1 equation komen te staan
 }
 
 function PlusMinus() {
   let nummer = document.getElementById("display_answer");
   let x = nummer.value;
-  x = x * -1;
+  x =+ x * -1;
   nummer.value = x;
+
+  //werkt niet bij de 2e nummer
   // result = function () {
   //   document.getElementById("display_answer").innerText * -1;
   // }
@@ -48,16 +51,14 @@ function PlusMinus() {
 
 
 function Answer() {
+  // value = document.getElementById("display_answer").value;
   document.getElementById("display_answer").value = eval(document.getElementById("display_answer").value);
+  // console.log(Answer.innerText);
 
   //laten we eerst kijken of we de functies in een string kan plaatsen:
   //de string bestaat uit een value van Numbs + de equation value + Numbs value (" 8 + 8 ") Check
   
-  // document.getElementsByClassName("Answers").value = Numbs.value + equation + Numbs.val ;
   // console.log(Answers);
-  //Hier moer ik het = value aanspreken
-  // obj.querySelector("=") = Answer;   
-  // Answer = Numbs.val && equations.val && Numbs.val;
   //Als ik klik op = moet hij de ingevulde cijfers berekenen.
 }
 

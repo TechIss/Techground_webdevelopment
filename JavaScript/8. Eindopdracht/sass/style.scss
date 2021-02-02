@@ -52,6 +52,14 @@ input {
     text-align: right;
 }
 
+#btn-equations{
+    background: palevioletred;
+}
+
+#btn-equations:active {
+    background: peru;
+}
+
 #resetButton {
     position: absolute;
     background: blueviolet;

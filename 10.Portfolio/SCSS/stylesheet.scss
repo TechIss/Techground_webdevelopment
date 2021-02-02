@@ -1,0 +1,137 @@
+@import "./resets";
+@import "./variables";
+// @import "./Backgroundstyle.scss";
+
+::-webkit-scrollbar{
+  width: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  min-height: 100vh;
+}
+
+.hexagon {
+  // top: 50px;
+  // left: 60px;
+  position: relative;
+  width: 60px;
+  height: 100px;
+  background-color: $primary-color;
+}
+
+.hexagon::before {
+  content:' ';
+  position: absolute;
+  top: 0;
+  left: -30;
+  width: 0px;
+  height: 0px;
+  border-right: 30px solid $primary-color;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+}
+
+.hexagon::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -30;
+  width: 0px;
+  height: 0px;
+  border-left: 30px solid $primary-color;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+}
+
+#scrollPath {
+  position: absolute;
+  height:5px;
+  width: 1000px;
+  left: 500px;
+  top: -10px;
+  background: $primary-color;
+  transform:rotate(20deg);
+  transform-origin:left;
+  animation:grow 1.5s linear forwards;
+}
+
+#scrollPath2 {
+  position: absolute;
+  height:5px;
+  width: 1000px;
+  left: 1400px;
+  top: -10px;
+  background: $primary-color;
+  transform:rotate(160deg);
+  transform-origin:left;
+  animation:grow 1.5s linear forwards;
+}
+
+#scrollPath3 {
+  position: absolute;
+  height:5px;
+  width: 500px;
+  left: 460px;
+  top: 331px;
+  background: $primary-color;
+  transform:rotate(20deg);
+  transform-origin:left;
+  animation:grow 1.5s linear forwards;
+}
+
+#scrollPath4 {
+  position: absolute;
+  height:5px;
+  width: 500px;
+  left: 1440px;
+  top: 331px;
+  background: $primary-color;
+  transform:rotate(160deg);
+  transform-origin:left;
+  animation:grow 1.5s linear forwards;
+}
+
+#scrollPath5 {
+  position: absolute;
+  height:5px;
+  width: 50px;
+  left: 950px;
+  top: 550px;
+  background: $primary-color;
+  transform:rotate(90deg);
+  transform-origin:left;
+  animation:grow 1.5s linear forwards;
+}
+
+#about {
+  position: absolute;
+  background: $accent-color;
+  width: 800px;
+  height: 500px;
+  left: 550px;
+  top: 600px;
+}
+
+#portfolio {
+  position: absolute;
+  background: $accent-color;
+  width: 800px;
+  height: 500px;
+  left: 550px;
+  top: 1400px;
+}
+
+#scrollPath6 {
+  position: absolute;
+  height:5px;
+  width: 200px;
+  left: 950px;
+  top: 1100px;
+  background: $primary-color;
+  transform:rotate(90deg);
+  transform-origin:left;
+  animation:grow 1.5s linear forwards;
+}
