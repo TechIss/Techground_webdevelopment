@@ -22,142 +22,31 @@ body {
   min-height: 100vh;
 }
 
-.hexagon {
+#containerOctagon {
+  background: coral;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-animation: animate 4s linear infinite;
+          animation: animate 4s linear infinite;
+}
+
+.Octagon {
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
   position: relative;
-  width: 60px;
-  height: 100px;
-  background-color: #083c40;
-}
-
-.hexagon::before {
-  content: ' ';
-  position: absolute;
-  top: 0;
-  left: -30;
-  width: 0px;
-  height: 0px;
-  border-right: 30px solid #083c40;
-  border-top: 50px solid transparent;
-  border-bottom: 50px solid transparent;
-}
-
-.hexagon::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: -30;
-  width: 0px;
-  height: 0px;
-  border-left: 30px solid #083c40;
-  border-top: 50px solid transparent;
-  border-bottom: 50px solid transparent;
-}
-
-#scrollPath {
-  position: absolute;
-  height: 5px;
-  width: 1000px;
-  left: 500px;
-  top: -10px;
-  background: #083c40;
-  -webkit-transform: rotate(20deg);
-          transform: rotate(20deg);
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  -webkit-animation: grow 1.5s linear forwards;
-          animation: grow 1.5s linear forwards;
-}
-
-#scrollPath2 {
-  position: absolute;
-  height: 5px;
-  width: 1000px;
-  left: 1400px;
-  top: -10px;
-  background: #083c40;
-  -webkit-transform: rotate(160deg);
-          transform: rotate(160deg);
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  -webkit-animation: grow 1.5s linear forwards;
-          animation: grow 1.5s linear forwards;
-}
-
-#scrollPath3 {
-  position: absolute;
-  height: 5px;
-  width: 500px;
-  left: 460px;
-  top: 331px;
-  background: #083c40;
-  -webkit-transform: rotate(20deg);
-          transform: rotate(20deg);
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  -webkit-animation: grow 1.5s linear forwards;
-          animation: grow 1.5s linear forwards;
-}
-
-#scrollPath4 {
-  position: absolute;
-  height: 5px;
-  width: 500px;
-  left: 1440px;
-  top: 331px;
-  background: #083c40;
-  -webkit-transform: rotate(160deg);
-          transform: rotate(160deg);
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  -webkit-animation: grow 1.5s linear forwards;
-          animation: grow 1.5s linear forwards;
-}
-
-#scrollPath5 {
-  position: absolute;
-  height: 5px;
-  width: 50px;
-  left: 950px;
-  top: 550px;
-  background: #083c40;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  -webkit-animation: grow 1.5s linear forwards;
-          animation: grow 1.5s linear forwards;
-}
-
-#about {
-  position: absolute;
-  background: #3d575b;
-  width: 800px;
-  height: 500px;
-  left: 550px;
-  top: 600px;
-}
-
-#portfolio {
-  position: absolute;
-  background: #3d575b;
-  width: 800px;
-  height: 500px;
-  left: 550px;
-  top: 1400px;
-}
-
-#scrollPath6 {
-  position: absolute;
-  height: 5px;
   width: 200px;
-  left: 950px;
-  top: 1100px;
-  background: #083c40;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  -webkit-animation: grow 1.5s linear forwards;
-          animation: grow 1.5s linear forwards;
+  height: 200px;
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+          clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+.Octagon:hover {
+  -webkit-transition-duration: 0s;
+          transition-duration: 0s;
 }
 /*# sourceMappingURL=stylesheet.css.map */

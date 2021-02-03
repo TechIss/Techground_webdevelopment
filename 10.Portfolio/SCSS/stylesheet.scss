@@ -6,6 +6,7 @@
   width: 0;
 }
 
+//background Octagon
 body {
   display: flex;
   justify-content: center;
@@ -13,125 +14,129 @@ body {
   min-height: 100vh;
 }
 
-.hexagon {
+#containerOctagon{
+  background: coral;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  animation: animate 4s linear infinite;
+
+}
+
+// @keyframes animate {
+//   0%{
+//     filter: hue-rotate(0deg);
+//   }
+//   100%{
+//     filter: hue-rotate(360deg);
+//   }
+// }
+
+.Octagon {
   // top: 50px;
   // left: 60px;
+  transition: 1s ease;
   position: relative;
-  width: 60px;
-  height: 100px;
-  background-color: $primary-color;
-}
-
-.hexagon::before {
-  content:' ';
-  position: absolute;
-  top: 0;
-  left: -30;
-  width: 0px;
-  height: 0px;
-  border-right: 30px solid $primary-color;
-  border-top: 50px solid transparent;
-  border-bottom: 50px solid transparent;
-}
-
-.hexagon::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: -30;
-  width: 0px;
-  height: 0px;
-  border-left: 30px solid $primary-color;
-  border-top: 50px solid transparent;
-  border-bottom: 50px solid transparent;
-}
-
-#scrollPath {
-  position: absolute;
-  height:5px;
-  width: 1000px;
-  left: 500px;
-  top: -10px;
-  background: $primary-color;
-  transform:rotate(20deg);
-  transform-origin:left;
-  animation:grow 1.5s linear forwards;
-}
-
-#scrollPath2 {
-  position: absolute;
-  height:5px;
-  width: 1000px;
-  left: 1400px;
-  top: -10px;
-  background: $primary-color;
-  transform:rotate(160deg);
-  transform-origin:left;
-  animation:grow 1.5s linear forwards;
-}
-
-#scrollPath3 {
-  position: absolute;
-  height:5px;
-  width: 500px;
-  left: 460px;
-  top: 331px;
-  background: $primary-color;
-  transform:rotate(20deg);
-  transform-origin:left;
-  animation:grow 1.5s linear forwards;
-}
-
-#scrollPath4 {
-  position: absolute;
-  height:5px;
-  width: 500px;
-  left: 1440px;
-  top: 331px;
-  background: $primary-color;
-  transform:rotate(160deg);
-  transform-origin:left;
-  animation:grow 1.5s linear forwards;
-}
-
-#scrollPath5 {
-  position: absolute;
-  height:5px;
-  width: 50px;
-  left: 950px;
-  top: 550px;
-  background: $primary-color;
-  transform:rotate(90deg);
-  transform-origin:left;
-  animation:grow 1.5s linear forwards;
-}
-
-#about {
-  position: absolute;
-  background: $accent-color;
-  width: 800px;
-  height: 500px;
-  left: 550px;
-  top: 600px;
-}
-
-#portfolio {
-  position: absolute;
-  background: $accent-color;
-  width: 800px;
-  height: 500px;
-  left: 550px;
-  top: 1400px;
-}
-
-#scrollPath6 {
-  position: absolute;
-  height:5px;
   width: 200px;
-  left: 950px;
-  top: 1100px;
-  background: $primary-color;
-  transform:rotate(90deg);
-  transform-origin:left;
-  animation:grow 1.5s linear forwards;
+  height: 200px;
+  // background-color: $primary-color;
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
 }
+
+.Octagon:hover{
+  transition-duration: 0s;
+}
+
+
+
+
+// #scrollPath {
+//   position: absolute;
+//   height:5px;
+//   width: 1000px;
+//   left: 500px;
+//   top: -10px;
+//   background: $primary-color;
+//   transform:rotate(20deg);
+//   transform-origin:left;
+//   animation:grow 1.5s linear forwards;
+// }
+
+// #scrollPath2 {
+//   position: absolute;
+//   height:5px;
+//   width: 1000px;
+//   left: 1400px;
+//   top: -10px;
+//   background: $primary-color;
+//   transform:rotate(160deg);
+//   transform-origin:left;
+//   animation:grow 1.5s linear forwards;
+// }
+
+// #scrollPath3 {
+//   position: absolute;
+//   height:5px;
+//   width: 500px;
+//   left: 460px;
+//   top: 331px;
+//   background: $primary-color;
+//   transform:rotate(20deg);
+//   transform-origin:left;
+//   animation:grow 1.5s linear forwards;
+// }
+
+// #scrollPath4 {
+//   position: absolute;
+//   height:5px;
+//   width: 500px;
+//   left: 1440px;
+//   top: 331px;
+//   background: $primary-color;
+//   transform:rotate(160deg);
+//   transform-origin:left;
+//   animation:grow 1.5s linear forwards;
+// }
+
+// #scrollPath5 {
+//   position: absolute;
+//   height:5px;
+//   width: 50px;
+//   left: 950px;
+//   top: 550px;
+//   background: $primary-color;
+//   transform:rotate(90deg);
+//   transform-origin:left;
+//   animation:grow 1.5s linear forwards;
+// }
+
+// // #about {
+// //   position: absolute;
+// //   background: $accent-color;
+// //   width: 800px;
+// //   height: 500px;
+// //   left: 550px;
+// //   top: 600px;
+// // }
+
+// #portfolio {
+//   position: absolute;
+//   background: $accent-color;
+//   width: 800px;
+//   height: 500px;
+//   left: 550px;
+//   top: 1400px;
+// }
+
+// #scrollPath6 {
+//   position: absolute;
+//   height:5px;
+//   width: 200px;
+//   left: 950px;
+//   top: 1100px;
+//   background: $primary-color;
+//   transform:rotate(90deg);
+//   transform-origin:left;
+//   animation:grow 1.5s linear forwards;
+// }
