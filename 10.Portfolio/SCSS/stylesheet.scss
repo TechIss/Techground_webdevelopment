@@ -1,53 +1,81 @@
 @import "./resets";
 @import "./variables";
 // @import "./Backgroundstyle.scss";
-
-::-webkit-scrollbar{
-  width: 0;
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-
-//background Octagon
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center ;
-  min-height: 100vh;
+body
+{
+	min-height: 100vh;
+	background: #000;
+	overflow: hidden;
 }
-
-#containerOctagon{
-  background: coral;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  animation: animate 4s linear infinite;
-
+.container
+{
+	position: relative;
+	height: 100vh;
+	overflow: hidden;
+	z-index: 2;
 }
-
-// @keyframes animate {
-//   0%{
-//     filter: hue-rotate(0deg);
-//   }
-//   100%{
-//     filter: hue-rotate(360deg);
-//   }
-// }
-
-.Octagon {
-  // top: 50px;
-  // left: 60px;
-  transition: 1s ease;
-  position: relative;
-  width: 200px;
-  height: 200px;
-  // background-color: $primary-color;
-  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+.row
+{
+	display: inline-flex;
+	margin-top: -63px;
+	margin-left: -125px;
 }
-
-.Octagon:hover{
-  transition-duration: 0s;
+.row:nth-child(even)
+{
+	margin-left: 1px;
 }
-
+.hexagon
+{
+	position: relative;
+	width: 250px;
+	height: 260px;
+	background: #111;
+	margin: 2px;
+	clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+	transition: 2s;
+}
+.hexagon:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	pointer-events: none;
+	background: rgba(255,255,255,0.02);
+	z-index: 1000;
+}
+#cursor
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 400px;
+	height: 400px;
+	background: #0f0;
+	border-radius: 50%;
+	transform: translate(-50%,-50%);
+	animation: animate 4s linear infinite;
+	z-index: 1;
+}
+@keyframes animate
+{
+	0%
+	{
+		filter: hue-rotate(0deg) blur(50px);
+	}
+	100%
+	{
+		filter: hue-rotate(360deg) blur(50px);
+	}
+}
 
 
 
