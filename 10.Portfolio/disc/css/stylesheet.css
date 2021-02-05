@@ -3,6 +3,7 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 * {
@@ -18,10 +19,14 @@ body {
   overflow: hidden;
 }
 
+main {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .container {
   position: relative;
   height: 100vh;
-  overflow: hidden;
   z-index: 2;
 }
 
@@ -41,24 +46,24 @@ body {
   position: relative;
   width: 250px;
   height: 260px;
-  background: #111;
+  background: black;
   margin: 2px;
   -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
           clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  -webkit-transition: 2s;
-  transition: 2s;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .hexagon:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 50%;
   height: 100%;
   pointer-events: none;
-  background: rgba(255, 255, 255, 0.02);
-  z-index: 1000;
+  background: black;
+  z-index: 3;
 }
 
 #cursor {
@@ -71,8 +76,8 @@ body {
   border-radius: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -webkit-animation: animate 4s linear infinite;
-          animation: animate 4s linear infinite;
+  -webkit-animation: animate 3s linear infinite;
+          animation: animate 3s linear infinite;
   z-index: 1;
 }
 
@@ -95,6 +100,68 @@ body {
   100% {
     -webkit-filter: hue-rotate(360deg) blur(50px);
             filter: hue-rotate(360deg) blur(50px);
+  }
+}
+
+#about {
+  position: absolute;
+  padding: 10%;
+  top: 28%;
+  left: 35%;
+  color: black;
+  margin: 2px;
+  z-index: 3;
+}
+
+#about:hover {
+  color: white;
+  margin: 2px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  z-index: 3;
+}
+
+.clicker {
+  width: 300px;
+  height: 100px;
+  outline: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.hiddendiv {
+  display: none;
+  height: 500px;
+  width: 1000px;
+  margin-left: -355px;
+  background-color: #083c40;
+}
+
+.clicker:focus + .hiddendiv {
+  display: block;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-animation: open 0.5s linear;
+          animation: open 0.5s linear;
+}
+
+@-webkit-keyframes open {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 500px;
+    width: 1000px;
+  }
+}
+
+@keyframes open {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 500px;
+    width: 1000px;
   }
 }
 /*# sourceMappingURL=stylesheet.css.map */

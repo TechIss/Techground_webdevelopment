@@ -1,10 +1,10 @@
-var cursor = document.getElementById('cursor');
+let cursor = document.getElementById('cursor');
 window.onmousemove = function(e){
     cursor.style.left = e.clientX + 'px';
     cursor.style.top = e.clientY + 'px';
 }
 
-// const containerHexagon = document.getElementById("containerHexagon");
+// const container = document.getElementById("containerHexagon");
 // const hexagons = 1503;
 // const color = [
 //     '#083c40',
