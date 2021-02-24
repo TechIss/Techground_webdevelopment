@@ -9,15 +9,18 @@
         <link rel="stylesheet" href="./disc/css/stylesheet.css" />
     </head>
     <body>
-        <main>
-            <!-- about -->
-            <div id="about" >
-				<div>
-					<div class="clicker" tabindex="1"> ABOUT</div>
-					<div class="hiddendiv"></div>
-					</div>
-                
-            </div>
+        <main id="mainContainer">
+
+                        <!-- dropdown Click -->
+                        <div id="dropdownContainer">
+                            <div class="dropdown">
+                                <button onclick="myFunction()" class="dropbtn">Click me!</button>
+                                <div id="myDropdown" class="dropdown-content">
+                                    <a href="./about.html">About</a>
+                                    <a href="./contact.html">Contact</a>
+                                </div>
+                            </div>
+                        </div>
             <!-- background Hexagon -->
             <div class="container">
                 <div class="row">
@@ -81,6 +84,7 @@
                     <div class="hexagon"></div>
                     <div class="hexagon"></div>
                     <div class="hexagon"></div>
+                    <a href="https://github.com/TechIss" target="_black"><div class="hexagon" id="hover1"></div></a>
                     <div class="hexagon"></div>
                     <div class="hexagon"></div>
                     <div class="hexagon"></div>
@@ -88,27 +92,7 @@
                     <div class="hexagon"></div>
                     <div class="hexagon"></div>
                     <div class="hexagon"></div>
-                    <div class="hexagon"></div>
-                    <div class="hexagon"></div>
-                    <div class="hexagon"></div>
-                    <div class="hexagon"></div>
-                    <div class="hexagon"></div>
-                    <div class="hexagon"></div>
-                    <!---16time)-->
-                </div>
-                <div class="row">
-                    <div class="hexagon"></div>
-                    <div class="hexagon"></div>
-                    <div class="hexagon"></div>
-                    <div class="hexagon"></div>
-                    <div class="hexagon"></div>
-                    <div class="hexagon"></div>
-                    <div class="hexagon"></div>
-                    <div class="hexagon"></div>
-                    <div class="hexagon"></div>
-                    <div class="hexagon"></div>
-                    <div class="hexagon"></div>
-                    <div class="hexagon"></div>
+                    <div class="hexagon"id="hover1"></div>
                     <div class="hexagon"></div>
                     <div class="hexagon"></div>
                     <div class="hexagon"></div>
@@ -123,7 +107,7 @@
                     <div class="hexagon"></div>
                     <div class="hexagon"></div>
                     <div class="hexagon"></div>
-                    <div class="hexagon"></div>
+                    <div class="hexagon" id="hover2"></div>
                     <div class="hexagon"></div>
                     <div class="hexagon"></div>
                     <div class="hexagon"></div>
@@ -211,6 +195,10 @@
                     <!---16time)-->
                 </div>
             </div>
+
+
+
+
             <!-- Cursor -->
             <div id="cursor"></div>
         </main>

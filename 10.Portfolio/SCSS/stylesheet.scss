@@ -21,34 +21,25 @@ main {
     position: relative;
     height: 100vh;
     z-index: 2;
+    top: -40px;
 }
+
 .row {
     display: inline-flex;
-    margin-top: -63px;
-    margin-left: -125px;
+    margin-top: -37px;
+    margin-left: -77px;
 }
 .row:nth-child(even) {
-    margin-left: 1px;
+    margin-left: -150px;
 }
 .hexagon {
     position: relative;
-    width: 250px;
-    height: 260px;
-    background: rgb(0, 0, 0);
-    margin: 2px;
+    width: 140px;
+    height: 150px;
+    background: rgb(213, 213, 213);
+    margin: 5px;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     transition: 1s;
-}
-.hexagon:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    pointer-events: none;
-    background: black;
-    z-index: 3;
 }
 
 //cursor
@@ -73,63 +64,87 @@ main {
     }
 }
 
-//about
-#about {
-	position: absolute;
-	padding: 10%;
-	top: 28%;
-	left: 35%;
-	// background: blanchedalmond;
-	color: black;
-	margin: 2px;
-    // transition: 1s;
-	z-index: 3;
+//dropdownClick.dropbtn {
+button:focus {
+    outline: none;
 }
 
-#about:hover {
-	color: $text-color;
-	margin: 2px;
-    transition: 1s;
-	z-index: 3;
+#dropdownContainer {
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    margin-left: 75px;
 }
 
-//hidden about
-.clicker {
-	width:300px;
-	height:100px;
-	outline:none;
-	cursor:pointer;
-	font-size: 20px;
-	}
-	
-	.hiddendiv{
-	display:none;
-	height:500px;
-	width: 1000px;
-	margin-left: -355px;
-	background-color: $primary-color;
-	}
-	
-	.clicker:focus + .hiddendiv{
-	display:block;
-	transition: 0.2s;
-	animation: open 0.5s linear;
-	}
+.dropbtn {
+    position: absolute;
+    top: 24%;
+    background-color: #00000000;
+    color: rgb(0, 0, 0);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    z-index: 4;
+}
 
-	@keyframes open {
-		0% {
-			height: 0;
-		}
-		100% {
-			height: 500px;;
-			width: 1000px;
-		}
-	}
-// #portfolio {
-//   position: absolute;
-//   background: $accent-color;
-//   width: 800px;
-//   height: 500px;
-//   left: 550px;
-//   top: 1400px;
-// }
+.dropbtn:hover, .dropbtn:focus {
+    text-align: center;
+
+    color: white;
+    z-index: 4;
+}
+
+.dropdown {
+    display: inline-block;
+    z-index: 4;
+}
+
+.dropdown-content {
+    margin-top: 310px;
+    display: none;
+    position: absolute;
+    background-color: rgb(213, 213, 213);
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 4;
+    margin-left: -30px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+#hover {
+    display: none;
+
+}
+#hover1:hover {
+    display: flex;
+    margin-left: -10px;
+    margin-top: -10px;
+    width: 180px;
+    height: 190px;
+    background-color: whitesmoke;
+}
+
+#hover2:hover {
+    display: flex;
+    margin-left: -10px;
+    margin-top: -10px;
+    width: 180px;
+    height: 190px;
+    background-color: whitesmoke;
+}
