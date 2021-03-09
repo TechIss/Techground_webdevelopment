@@ -2,7 +2,7 @@ package BijenkorfFramwork.Steps;
 
 import java.util.concurrent.TimeUnit;
 
-
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import cucumber.api.java.Before;
@@ -29,7 +29,8 @@ public class stepfile {
 
 	@When("^I click on the button DAMES$")
 	public void i_click_on_the_button_DAMES() throws Throwable {
-		System.out.println("i_click_on_the_button_DAMES");
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//a[contains(text(),'Dames')]")).click();
 	}
 
 	@Then("^I click on the button Schoenen$")
